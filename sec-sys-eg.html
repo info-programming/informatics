@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-09-24T06:40:41+09:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>システムの例</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="image/style.css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.11;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\require{newunicodechar}\unimathsetup{math-style=ISO,bold-style=ISO}
+\setmathfont{xits-math.otf}
+\usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
+\setmonofont{Noto Sans Mono CJK JP}
+\setmainfont[ BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
+\setmainjfont[BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
+\setsansjfont{Noto Sans CJK JP}
+\newunicodechar{🌱}{\includegraphics[width=1em]{image/seedling.png}}
+
+\renewcommand{\baselinestretch}{1.2}
+\setlength{\parskip}{6pt plus 2pt minus 2pt}
+\titlespacing{\chapter}{0pt}{10pt}{15pt}
+\titlespacing{\section}{0pt}{5pt plus 3pt minus 3pt}{3pt plus 1pt}
+\titlespacing{\subsection}{0pt}{3pt plus 2pt minus 2pt}{2pt plus 1pt}
+\titlespacing{\subsubsection}{0pt}{1pt plus 1pt minus 1pt}{1pt plus 1pt}
+
+\parindent = 1\zw
+
+\renewcommand{\alert      }[1]{\textcolor{RedOrange}{\textbf{#1}}}
+\renewcommand{\terminology}[1]{\textcolor{OliveGreen}{\textbf{#1}}}
+\renewcommand{\emph       }[1]{\textcolor{RoyalBlue}{\textbf{#1}}}
+
+\tcbset{fonttitle=\bfseries}
+\tcbset{propositionstyle/.style={colframe=RedOrange,     colback=RedOrange!2!white }}
+\tcbset{ definitionstyle/.style={colframe=OliveGreen,    colback=OliveGreen!2!white}}
+\tcbset{       notestyle/.style={colframe=black!75!white,colback=black!2!white     }}
+
+\hypersetup{bookmarksopen,bookmarksnumbered}
+
+\let\gt\undefined
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">情報学基礎 補助資料</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-sys-dynamic.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-sys.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-sys-decompose.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-sys-dynamic.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-sys.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-sys-decompose.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="ch-intro.html" data-scroll="ch-intro"><span class="codenumber">1</span> <span class="title">情報社会と情報学</span></a><ul>
+<li><a href="sec-intro-bg.html" data-scroll="sec-intro-bg">情報学を学ぶ背景</a></li>
+<li><a href="sec-intro-purpose.html" data-scroll="sec-intro-purpose">情報学を学ぶ目的</a></li>
+<li><a href="sec-intro-structure.html" data-scroll="sec-intro-structure">本稿の構成</a></li>
+<li><a href="sec-intro-bib.html" data-scroll="sec-intro-bib">関連分野と参考文献</a></li>
+<li><a href="sec-intro-symbol.html" data-scroll="sec-intro-symbol">本稿で用いる記号</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-sem.html" data-scroll="ch-sem"><span class="codenumber">2</span> <span class="title">記号と意味</span></a><ul>
+<li><a href="sec-sem-semiotics.html" data-scroll="sec-sem-semiotics">記号と意味</a></li>
+<li><a href="sec-sem-code.html" data-scroll="sec-sem-code">符号化と復号</a></li>
+<li><a href="sec-sem-subject.html" data-scroll="sec-sem-subject">主観性</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-info.html" data-scroll="ch-info"><span class="codenumber">3</span> <span class="title">情報</span></a><ul>
+<li><a href="sec-info-history.html" data-scroll="sec-info-history">情報の歴史</a></li>
+<li><a href="sec-info-def.html" data-scroll="sec-info-def">情報の定義</a></li>
+<li><a href="sec-info-class.html" data-scroll="sec-info-class">情報の分類</a></li>
+<li><a href="sec-info-subject.html" data-scroll="sec-info-subject">情報の主観性</a></li>
+<li><a href="sec-info-entropy.html" data-scroll="sec-info-entropy">情報の「量」</a></li>
+<li><a href="sec-info-code.html" data-scroll="sec-info-code">通信における符号</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-comm.html" data-scroll="ch-comm"><span class="codenumber">4</span> <span class="title">コミュニケーション</span></a><ul>
+<li><a href="sec-comm-model.html" data-scroll="sec-comm-model">コミュニケーション・モデル</a></li>
+<li><a href="sec-comm-step.html" data-scroll="sec-comm-step">コミュニケーションの段階</a></li>
+<li><a href="sec-comm-cont.html" data-scroll="sec-comm-cont">コミュニケーションの継続と断絶</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-media.html" data-scroll="ch-media"><span class="codenumber">5</span> <span class="title">メディア</span></a><ul>
+<li><a href="sec-media-bg.html" data-scroll="sec-media-bg">メディアとコミュニケーション</a></li>
+<li><a href="sec-media-def.html" data-scroll="sec-media-def">メディアの定義</a></li>
+<li><a href="sec-media-class.html" data-scroll="sec-media-class">メディアの分類</a></li>
+<li><a href="sec-media-influence.html" data-scroll="sec-media-influence">メディアが個人に与える影響</a></li>
+<li><a href="sec-media-literacy.html" data-scroll="sec-media-literacy">メディア・リテラシーとコミュニケーション能力</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-problem.html" data-scroll="ch-problem"><span class="codenumber">6</span> <span class="title">問題</span></a><ul>
+<li><a href="sec-problem-bg.html" data-scroll="sec-problem-bg">複雑性と問題</a></li>
+<li><a href="sec-problem-def.html" data-scroll="sec-problem-def">問題の定義</a></li>
+<li><a href="sec-problem-approach.html" data-scroll="sec-problem-approach">問題解決の方針</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-reduction.html" data-scroll="ch-reduction"><span class="codenumber">7</span> <span class="title">還元</span></a><ul>
+<li><a href="sec-reduction-bg.html" data-scroll="sec-reduction-bg">還元主義</a></li>
+<li><a href="sec-reduction-def.html" data-scroll="sec-reduction-def">還元の定義</a></li>
+<li><a href="sec-reduction-cond.html" data-scroll="sec-reduction-cond">還元の条件</a></li>
+<li><a href="sec-reduction-eg.html" data-scroll="sec-reduction-eg">還元の例</a></li>
+<li><a href="sec-reduction-model.html" data-scroll="sec-reduction-model">モデル</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-sys.html" data-scroll="ch-sys"><span class="codenumber">8</span> <span class="title">システム</span></a><ul>
+<li><a href="sec-sys-bg.html" data-scroll="sec-sys-bg">構造主義</a></li>
+<li><a href="sec-sys-def.html" data-scroll="sec-sys-def">システムの定義</a></li>
+<li><a href="sec-sys-dynamic.html" data-scroll="sec-sys-dynamic">システムの時間発展</a></li>
+<li><a href="sec-sys-eg.html" data-scroll="sec-sys-eg" class="active">システムの例</a></li>
+<li><a href="sec-sys-decompose.html" data-scroll="sec-sys-decompose">システムの分割</a></li>
+<li><a href="sec-sys-autopoiesis.html" data-scroll="sec-sys-autopoiesis">オートポイエーシスの影響</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-em.html" data-scroll="ch-em"><span class="codenumber">9</span> <span class="title">創発</span></a><ul>
+<li><a href="sec-em-bg.html" data-scroll="sec-em-bg">創発主義</a></li>
+<li><a href="sec-em-def.html" data-scroll="sec-em-def">アイデア</a></li>
+<li><a href="sec-em-gen.html" data-scroll="sec-em-gen">創発の方法</a></li>
+<li><a href="sec-em-sys.html" data-scroll="sec-em-sys">システムにおける創発</a></li>
+<li><a href="sec-em-inclusion.html" data-scroll="sec-em-inclusion">社会における包摂と排除</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-interference.html" data-scroll="ch-interference"><span class="codenumber">10</span> <span class="title">介入</span></a><ul>
+<li><a href="sec-interference-def.html" data-scroll="sec-interference-def">介入の定義</a></li>
+<li><a href="sec-interference-intent.html" data-scroll="sec-interference-intent">意図と予期</a></li>
+<li><a href="sec-interference-ex.html" data-scroll="sec-interference-ex">明示的な介入</a></li>
+<li><a href="sec-interference-im.html" data-scroll="sec-interference-im">暗示的な介入</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-logic.html" data-scroll="ch-logic"><span class="codenumber">11</span> <span class="title">論理</span></a><ul>
+<li><a href="sec-logic-purpose.html" data-scroll="sec-logic-purpose">論理の目的</a></li>
+<li><a href="sec-logic-def.html" data-scroll="sec-logic-def">定義</a></li>
+<li><a href="sec-logic-prop.html" data-scroll="sec-logic-prop">命題と定理</a></li>
+<li><a href="sec-logic-infer.html" data-scroll="sec-logic-infer">推論</a></li>
+<li><a href="sec-logic-science.html" data-scroll="sec-logic-science">科学における推論</a></li>
+</ul>
+</li>
+<li class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">参考文献</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">索引</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-sys-eg"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">8.4</span> <span class="title">システムの例</span>
+</h2>
+<a href="sec-sys-eg.html" class="permalink">¶</a><section class="introduction" id="introduction-13"><p id="p-162">システムの例には生態系や生物の循環系、化学における反応系などがあるが、ここでは主に社会的なシステムに焦点を当て、心理システムと社会システムを例示する。 これらは人間の社会を構成する基本的なシステムであり、いずれも半閉鎖系であることが特徴である。</p></section><section class="subsection" id="ssec-sys-eg-psy"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">8.4.1</span> <span class="title">心理システム</span>
+</h3>
+<a href="sec-sys-eg.html#ssec-sys-eg-psy" class="permalink">¶</a><p id="p-163"><dfn class="terminology">心理システム</dfn>は<em class="emphasis">思考</em>を要素とするシステムである<a data-knowl="./knowl/bib-kawamoto.html" title="Bibliographic Entry 41: オートポイエーシス――第三世代システム">[41]</a><a data-knowl="./knowl/bib-bateson2.html" title="Bibliographic Entry 16: 精神と自然――生きた世界の認識論">[16]</a>。 Descartesが“私は考える、ゆえに私はある”と述べたように<a data-knowl="./knowl/bib-descartes.html" title="Bibliographic Entry 42: Discourse on the Method of Rightly Conducting the Reason, and Seeking the Truth in the Sciences">[42]</a><a data-knowl="./knowl/bib-descartes-j.html" title="Bibliographic Entry 43: 方法序説">[43]</a>、心理システムは生命の<em class="emphasis">意識</em>ともいえる。</p>
+<p id="p-164"><dfn class="terminology">思考</dfn>は、<em class="emphasis">送り手と受け手が同一であるコミュニケーション</em>である。 Plátōnが“魂の内において音声を伴わずに、魂自身を相手に行われる対話”<a data-knowl="./knowl/bib-platon.html" title="Bibliographic Entry 49: ソピステス">[49]</a><a data-knowl="./knowl/bib-platon-e.html" title="Bibliographic Entry 50: Sophist">[50]</a>を思考と呼んでいるように、人間の思考では、思考が「ひとりごと」として表出するか否かにかかわらず、記号が使われる(<dfn class="terminology">シンボル機能</dfn>)<a data-knowl="./knowl/bib-bertalanffy.html" title="Bibliographic Entry 35: 一般システム理論――その基礎・発展・応用">[35]</a>。 特に母語は人間の思考様式に大きな影響を及ぼしており、<em class="emphasis">母語が異なれば思考様式が異なりうる</em>。 これは、人間の思考様式が普遍的に同じであることを否定するものであり、<dfn class="terminology">言語相対仮説</dfn>や<dfn class="terminology">Sapir-Whorf仮説</dfn>と呼ばれる<a data-knowl="./knowl/bib-whorf.html" title="Bibliographic Entry 52: Science and Linguistics">[52]</a><a data-knowl="./knowl/bib-sapir.html" title="Bibliographic Entry 51: The Status of Linguistics as a Science">[51]</a>。</p>
+<p id="p-165">心理システムは知的な生命を構成する最も基本的なシステムである。 連続的な思考の積み重ねは思考間の関連を生み出し、心理システムの構造を形成する。 こうして形成された構造がそのシステムにとっての<em class="emphasis">世界</em>であり、そのシステムが持つ<em class="emphasis">現実イメージ</em>である。 この「世界」や「現実イメージ」が実際の現実と異なっていることは、<a href="sec-media-influence.html" class="internal" title="Section 5.4: メディアが個人に与える影響">5.4</a>節で述べた通りである。</p>
+<p id="p-166">心理システムの思考は、誤りが生じぬよう、論理的で合理的であることを志向して展開される。 だが、現実イメージは現実の一部分を捉えたものでしかなく、しかも実際の現実とも異なる。 そのため、心理システムにおける思考は、決して完璧に正しいとはいえず、最適な判断ができるわけでもない。 こうした、<em class="emphasis">ある限定された範囲までの合理性しかない</em>性質を<dfn class="terminology">限定合理性</dfn>という<a data-knowl="./knowl/bib-simon.html" title="Bibliographic Entry 37: オーガニゼーションズ 第2版――現代組織論の原典">[37]</a>。</p>
+<p id="p-167">心理システムを構成する思考には、システムの外部から直接に影響を与えることはできない。 システムの外部、即ち環境が人間の思考に影響を与えられるのは、ただ人間が環境を観察し、それに反応したときのみである。 例えば、ある人間の肉体にどれほど強い攻撃を加えても、その人間の精神が攻撃に屈しない限り、その人間の思考を束縛することはできない。 従って、<em class="emphasis">心理システムは半閉鎖系</em>である。</p></section><section class="subsection" id="ssec-sys-eg-soc"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">8.4.2</span> <span class="title">社会システム</span>
+</h3>
+<a href="sec-sys-eg.html#ssec-sys-eg-soc" class="permalink">¶</a><p id="p-168">心理システムがもつ限定合理性を克服するため、生命は他の生命と合同し、より大きな集団を形成する。 その集団内でコミュニケーションを行ってお互いの限定合理性を補い合い、より完全な合理性を手に入れようとする<a data-knowl="./knowl/bib-kuwata.html" title="Bibliographic Entry 53: 組織論 補訂版">[53]</a>。 このようにして形成される<dfn class="terminology">社会システム</dfn>は<em class="emphasis">コミュニケーション</em>を要素とするシステムであり、<dfn class="terminology">組織</dfn>とも呼ばれる<a data-knowl="./knowl/bib-barnard.html" title="Bibliographic Entry 54: 新訳 経営者の役割">[54]</a><a data-knowl="./knowl/bib-simon.html" title="Bibliographic Entry 37: オーガニゼーションズ 第2版――現代組織論の原典">[37]</a>。 生命が互いに連携して社会を構成するためには、社会システムの存在が不可欠である。</p>
+<p id="p-169">社会システムは、そこに形式上所属する人間ではなく、そこで行われるコミュニケーションが要素となる<a data-knowl="./knowl/bib-borch.html" title="Bibliographic Entry 21: ニクラス・ルーマン入門――社会システム理論とは何か">[21]</a>。 例えば、ある学級に形式上は所属していても、そこで行われるコミュニケーションに一切参加しなければ、社会システムとしての学級に関与しているといえない。 逆に、その学級に所属していなくとも、そこでのコミュニケーションに参加していれば、社会システムとしての学級に関与しているといえる。</p>
+<p id="p-170">社会システムには、その要素である<em class="emphasis">コミュニケーションを支える、固有の成果メディアが存在</em>する。 特定の企業などの場合、この成果メディアは<dfn class="terminology">組織文化</dfn>(<dfn class="terminology">corporate culture</dfn>)と呼ばれ、組織のコミュニケーションを円滑にする。 組織文化が通用する範囲が組織の内側であり、組織文化が通用しなくなる外側との間に境界が発生し、組織の一体感が生じる源泉ともなる。</p>
+<p id="p-171"><a href="sec-media-class.html#ssec-media-soc" class="internal" title="Subsection 5.3.2: 成果メディア">5.3.2</a>節で示した、より一般的な成果メディアに対しても、それぞれが通用する社会システムが存在する。 例えば、<em class="emphasis">真理</em>は学会や学術システムが、<em class="emphasis">愛</em>は家族や血縁に基づくシステムが、<em class="emphasis">貨幣</em>は市場などの経済システムが、<em class="emphasis">法</em>は裁判所や司法システムが、<em class="emphasis">権力</em>は自治体や官庁などの政治システムが、<em class="emphasis">宗教</em>には教団が、<em class="emphasis">芸術</em>にはパトロンやファン組織が対応する。</p>
+<p id="p-172">社会システムは個々の心理システムが関与して存在しているため、心理システムがもつ特徴を継承している。 まず、<em class="emphasis">社会システムは限定合理性をもつ</em>。 元になる心理システムが限定合理性をもつ以上、それらのコミュニケーションから構成される社会システムがもつ合理性もまた、限定的である。</p>
+<p id="p-173">また、心理システムの思考と同様に、社会システムのコミュニケーションも、外部から影響を与えることは難しい。 たとえ企業が倒産したり、国がなくなったとしても、それらに関するコミュニケーションには直接、影響を及ぼすことができない。 従って、<em class="emphasis">社会システムは半閉鎖系</em>である。</p>
+<article class="remark-like" id="note-9"><h6 class="heading">
+<span class="type">注釈</span> <span class="codenumber">8.16</span>. <span class="title">実体関連モデルと関係データベース.</span>
+</h6>
+<p id="p-174">コンピュータで情報をデータとして蓄積し、利用できるようにしたものを<dfn class="terminology">データベース</dfn>(<dfn class="terminology">database</dfn>)(<dfn class="terminology">DB</dfn>)といい、データベースを管理するためのシステムを<dfn class="terminology">データベース管理システム</dfn>(<dfn class="terminology">database management system</dfn>)(<dfn class="terminology">DBMS</dfn>)という。 DBMSでは、DBの情報の追加・削除を行うことや、DBから情報を検索し読み出すことができる。</p>
+<p id="p-175">現在広く使われるDBの大半が、Codd<a data-knowl="./knowl/bib-codd.html" title="Bibliographic Entry 56: A relational model of data for large shared data banks">[56]</a>の提案に基づく<dfn class="terminology">関係データベース</dfn>(<dfn class="terminology">relational database</dfn>)(<dfn class="terminology">RDB</dfn>)と呼ばれる種類のDBであり、RDBの管理システムを<dfn class="terminology">関係データベース管理システム</dfn>(<dfn class="terminology">RDBMS</dfn>)という。 このRDBの設計には、Chenによる<dfn class="terminology">実体関連モデル</dfn>(<dfn class="terminology">Entity-Relationship model</dfn>)(<dfn class="terminology">E-Rモデル</dfn>)<a data-knowl="./knowl/bib-chen-er.html" title="Bibliographic Entry 57: The Entity-Relationship Model-Toward a Unified View of Data">[57]</a>と呼ばれるモデルが使われる。 E-Rモデルでは、DBの作成対象を<dfn class="terminology">実体</dfn>(<dfn class="terminology">entity</dfn>)と、実体間の<dfn class="terminology">関連</dfn>(<dfn class="terminology">relationship</dfn>)と捉え、実体や関連を属性付きで蓄積したDBをそれぞれ作成し、個々のDBを関連付けて管理する。</p></article></section></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.11/login.js"></script>
+</body>
+</html>

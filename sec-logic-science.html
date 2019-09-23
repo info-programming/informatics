@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-09-24T06:40:42+09:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>科学における推論</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="image/style.css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.11;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\require{newunicodechar}\unimathsetup{math-style=ISO,bold-style=ISO}
+\setmathfont{xits-math.otf}
+\usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
+\setmonofont{Noto Sans Mono CJK JP}
+\setmainfont[ BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
+\setmainjfont[BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
+\setsansjfont{Noto Sans CJK JP}
+\newunicodechar{🌱}{\includegraphics[width=1em]{image/seedling.png}}
+
+\renewcommand{\baselinestretch}{1.2}
+\setlength{\parskip}{6pt plus 2pt minus 2pt}
+\titlespacing{\chapter}{0pt}{10pt}{15pt}
+\titlespacing{\section}{0pt}{5pt plus 3pt minus 3pt}{3pt plus 1pt}
+\titlespacing{\subsection}{0pt}{3pt plus 2pt minus 2pt}{2pt plus 1pt}
+\titlespacing{\subsubsection}{0pt}{1pt plus 1pt minus 1pt}{1pt plus 1pt}
+
+\parindent = 1\zw
+
+\renewcommand{\alert      }[1]{\textcolor{RedOrange}{\textbf{#1}}}
+\renewcommand{\terminology}[1]{\textcolor{OliveGreen}{\textbf{#1}}}
+\renewcommand{\emph       }[1]{\textcolor{RoyalBlue}{\textbf{#1}}}
+
+\tcbset{fonttitle=\bfseries}
+\tcbset{propositionstyle/.style={colframe=RedOrange,     colback=RedOrange!2!white }}
+\tcbset{ definitionstyle/.style={colframe=OliveGreen,    colback=OliveGreen!2!white}}
+\tcbset{       notestyle/.style={colframe=black!75!white,colback=black!2!white     }}
+
+\hypersetup{bookmarksopen,bookmarksnumbered}
+
+\let\gt\undefined
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">情報学基礎 補助資料</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-logic-infer.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-logic-infer.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="ch-intro.html" data-scroll="ch-intro"><span class="codenumber">1</span> <span class="title">情報社会と情報学</span></a><ul>
+<li><a href="sec-intro-bg.html" data-scroll="sec-intro-bg">情報学を学ぶ背景</a></li>
+<li><a href="sec-intro-purpose.html" data-scroll="sec-intro-purpose">情報学を学ぶ目的</a></li>
+<li><a href="sec-intro-structure.html" data-scroll="sec-intro-structure">本稿の構成</a></li>
+<li><a href="sec-intro-bib.html" data-scroll="sec-intro-bib">関連分野と参考文献</a></li>
+<li><a href="sec-intro-symbol.html" data-scroll="sec-intro-symbol">本稿で用いる記号</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-sem.html" data-scroll="ch-sem"><span class="codenumber">2</span> <span class="title">記号と意味</span></a><ul>
+<li><a href="sec-sem-semiotics.html" data-scroll="sec-sem-semiotics">記号と意味</a></li>
+<li><a href="sec-sem-code.html" data-scroll="sec-sem-code">符号化と復号</a></li>
+<li><a href="sec-sem-subject.html" data-scroll="sec-sem-subject">主観性</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-info.html" data-scroll="ch-info"><span class="codenumber">3</span> <span class="title">情報</span></a><ul>
+<li><a href="sec-info-history.html" data-scroll="sec-info-history">情報の歴史</a></li>
+<li><a href="sec-info-def.html" data-scroll="sec-info-def">情報の定義</a></li>
+<li><a href="sec-info-class.html" data-scroll="sec-info-class">情報の分類</a></li>
+<li><a href="sec-info-subject.html" data-scroll="sec-info-subject">情報の主観性</a></li>
+<li><a href="sec-info-entropy.html" data-scroll="sec-info-entropy">情報の「量」</a></li>
+<li><a href="sec-info-code.html" data-scroll="sec-info-code">通信における符号</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-comm.html" data-scroll="ch-comm"><span class="codenumber">4</span> <span class="title">コミュニケーション</span></a><ul>
+<li><a href="sec-comm-model.html" data-scroll="sec-comm-model">コミュニケーション・モデル</a></li>
+<li><a href="sec-comm-step.html" data-scroll="sec-comm-step">コミュニケーションの段階</a></li>
+<li><a href="sec-comm-cont.html" data-scroll="sec-comm-cont">コミュニケーションの継続と断絶</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-media.html" data-scroll="ch-media"><span class="codenumber">5</span> <span class="title">メディア</span></a><ul>
+<li><a href="sec-media-bg.html" data-scroll="sec-media-bg">メディアとコミュニケーション</a></li>
+<li><a href="sec-media-def.html" data-scroll="sec-media-def">メディアの定義</a></li>
+<li><a href="sec-media-class.html" data-scroll="sec-media-class">メディアの分類</a></li>
+<li><a href="sec-media-influence.html" data-scroll="sec-media-influence">メディアが個人に与える影響</a></li>
+<li><a href="sec-media-literacy.html" data-scroll="sec-media-literacy">メディア・リテラシーとコミュニケーション能力</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-problem.html" data-scroll="ch-problem"><span class="codenumber">6</span> <span class="title">問題</span></a><ul>
+<li><a href="sec-problem-bg.html" data-scroll="sec-problem-bg">複雑性と問題</a></li>
+<li><a href="sec-problem-def.html" data-scroll="sec-problem-def">問題の定義</a></li>
+<li><a href="sec-problem-approach.html" data-scroll="sec-problem-approach">問題解決の方針</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-reduction.html" data-scroll="ch-reduction"><span class="codenumber">7</span> <span class="title">還元</span></a><ul>
+<li><a href="sec-reduction-bg.html" data-scroll="sec-reduction-bg">還元主義</a></li>
+<li><a href="sec-reduction-def.html" data-scroll="sec-reduction-def">還元の定義</a></li>
+<li><a href="sec-reduction-cond.html" data-scroll="sec-reduction-cond">還元の条件</a></li>
+<li><a href="sec-reduction-eg.html" data-scroll="sec-reduction-eg">還元の例</a></li>
+<li><a href="sec-reduction-model.html" data-scroll="sec-reduction-model">モデル</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-sys.html" data-scroll="ch-sys"><span class="codenumber">8</span> <span class="title">システム</span></a><ul>
+<li><a href="sec-sys-bg.html" data-scroll="sec-sys-bg">構造主義</a></li>
+<li><a href="sec-sys-def.html" data-scroll="sec-sys-def">システムの定義</a></li>
+<li><a href="sec-sys-dynamic.html" data-scroll="sec-sys-dynamic">システムの時間発展</a></li>
+<li><a href="sec-sys-eg.html" data-scroll="sec-sys-eg">システムの例</a></li>
+<li><a href="sec-sys-decompose.html" data-scroll="sec-sys-decompose">システムの分割</a></li>
+<li><a href="sec-sys-autopoiesis.html" data-scroll="sec-sys-autopoiesis">オートポイエーシスの影響</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-em.html" data-scroll="ch-em"><span class="codenumber">9</span> <span class="title">創発</span></a><ul>
+<li><a href="sec-em-bg.html" data-scroll="sec-em-bg">創発主義</a></li>
+<li><a href="sec-em-def.html" data-scroll="sec-em-def">アイデア</a></li>
+<li><a href="sec-em-gen.html" data-scroll="sec-em-gen">創発の方法</a></li>
+<li><a href="sec-em-sys.html" data-scroll="sec-em-sys">システムにおける創発</a></li>
+<li><a href="sec-em-inclusion.html" data-scroll="sec-em-inclusion">社会における包摂と排除</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-interference.html" data-scroll="ch-interference"><span class="codenumber">10</span> <span class="title">介入</span></a><ul>
+<li><a href="sec-interference-def.html" data-scroll="sec-interference-def">介入の定義</a></li>
+<li><a href="sec-interference-intent.html" data-scroll="sec-interference-intent">意図と予期</a></li>
+<li><a href="sec-interference-ex.html" data-scroll="sec-interference-ex">明示的な介入</a></li>
+<li><a href="sec-interference-im.html" data-scroll="sec-interference-im">暗示的な介入</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-logic.html" data-scroll="ch-logic"><span class="codenumber">11</span> <span class="title">論理</span></a><ul>
+<li><a href="sec-logic-purpose.html" data-scroll="sec-logic-purpose">論理の目的</a></li>
+<li><a href="sec-logic-def.html" data-scroll="sec-logic-def">定義</a></li>
+<li><a href="sec-logic-prop.html" data-scroll="sec-logic-prop">命題と定理</a></li>
+<li><a href="sec-logic-infer.html" data-scroll="sec-logic-infer">推論</a></li>
+<li><a href="sec-logic-science.html" data-scroll="sec-logic-science" class="active">科学における推論</a></li>
+</ul>
+</li>
+<li class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">参考文献</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">索引</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-logic-science"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">11.5</span> <span class="title">科学における推論</span>
+</h2>
+<a href="sec-logic-science.html" class="permalink">¶</a><p id="p-270">実際に命題\(P\)の正しさを示す場面では、次の方法も使われる。</p>
+<ul class="disc">
+<li id="li-66">\(P\)を述べた<em class="emphasis">文献</em>を引いて示す 過去の論文、書籍、記事などで、\(P\)を述べた部分を根拠として示す。 重要な根拠の場合には、\(P\)を述べた部分を<em class="emphasis">出典</em>として<em class="emphasis">引用</em>することもある。 これは演繹に類似した方法だが、出典自体の正しさに疑義がある場合、\(P\)の正しさを保証できない。</li>
+<li id="li-67">\(P\)を<em class="emphasis">実験</em>や<em class="emphasis">調査</em>、<em class="emphasis">シミュレーション</em>、<em class="emphasis">統計</em>で示す 実験や調査を直接実施する他、模擬的に現象を再現するシミュレーションや、過去に収集された統計などの事例を元に\(P\)を示す。 物理学や生物学、心理学や社会学では、演繹では正しさを示せない場合が多いため、この方法を使うことが一般的である。 これは帰納に類似した方法であり、一般化により\(P\)の正しさを示そうとするため、厳密性は十分でない。</li>
+<li id="li-68">\(P\)を<em class="emphasis">確率的</em>に示す \(P\)が偽となる場合が実際には存在しても、その場合がごく稀にしか生じないことが明らかな場合は、\(P\)が正しいものとして扱うことができる。 例えば、高い偶発性をもつなど極めて特殊な条件下でしか反例が生じない場合は、そうした場合を検討する必要性や意義が小さい。 \(P\)の反例が生じる確率により厳密性が左右されるため、本当に反例が生じる確率が十分に小さいかを吟味する必要がある。</li>
+<li id="li-69">\(P\)が真だと<em class="emphasis">仮定</em>する 理論を構築するにあたって必要な命題については、<dfn class="terminology">公理</dfn>(<dfn class="terminology">axiom</dfn>)や公準・原理・前提などと呼び、真だと仮定することがある。 これはあくまで「仮定」なので、その命題の正しさを示すわけではないが、正しさが十分に明らかだと考えられる場合には、この仮定を行うことができる。 数学や論理学など何らかの命題を仮定しないと理論を構築できない場合や、物理学や生物学で実際の観測を行えない場合に、はじめに仮定をおいて理論を構築する。</li>
+<li id="li-70">\(P\)を別の命題\(P'\)に<em class="emphasis">変形</em>(<em class="emphasis">帰着</em>)して示す より単純な別の命題に変形して解くことで、そのままでは複雑で扱いにくい命題\(P\)を示す。 文章で表された問題を数式に変形して解いたり、欲しい情報をキーワードに変形して検索エンジンに委ねたりした上で、得られた結果を解釈して元の問題の解とする。 変形した問題\(P'\)は、既に解が知られている問題であるか、時間的・経済的・人員的に解決できる問題である必要がある。</li>
+<li id="li-71">\(P\)を複数の命題\(P_1, P_2\)に<em class="emphasis">問題分割</em>(還元)して示す 命題\(P\)を複数の命題の組み合わせに分割することで、問題を明確化し示しやすくする。 \(P\)を「\(P_1\)かつ\(P_2\)」の形に分割する場合と、「\(P_1\)または\(P_2\)」の形に分割する場合がありうる。 前者には、手順のように順序で分割できるものや、複数の命題を元に\(P\)を示すものなどがある。 後者には、場合分けのようにいずれかの場合が満たされればよいものなどがある。</li>
+</ul>
+<p id="p-271">証明された命題の体系を<dfn class="terminology">理論</dfn>(<dfn class="terminology">theory</dfn>)や学問と呼び、その全体は<dfn class="terminology">科学</dfn>(<dfn class="terminology">science</dfn>)と呼ばれる。 その論理性と客観性により、科学は、一定の方法に従えば<em class="emphasis">誰もが</em>技能を身につけられる手順や、<em class="emphasis">誰もが</em>最適な判断を行うための知識を提供する。 科学を学び体系的な知識を得ることで、人間は試行錯誤や失敗の回数を最小限に抑えることができ、より高度で、より正しい行動を効率的に実行できるようになる。</p></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.11/login.js"></script>
+</body>
+</html>

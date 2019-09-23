@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.2" width="600" height="800" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+	<symbol id="system-base" viewBox="-40,-75 80,85">
+		<defs>
+			<path id="path1" d="m 0,  7 c  40,0  40,-35 0,-35" style="fill:none"/>
+			<path id="path2" d="m 0,-14 c -40,0 -40,-14 0,-14" style="fill:none"/>
+			<path id="triangle1" d="m 3, 0 h -6 l  3,-6 z" style="fill-opacity:1"/>
+			<path id="triangle2" d="m 0,-3 v  6 l -6,-3 z" style="fill-opacity:1"/>
+		</defs>
+		<!--<rect x="-40" y="-75" width="80" height="85"/>-->
+		<ellipse rx="30" ry="7" cx="0" cy="0"/>
+		<use xlink:href="#path1"     x= "0" y=  "0"/>
+		<use xlink:href="#path2"     x= "0" y=  "0"/>
+		<use xlink:href="#path1"     x= "0" y="-21"/>
+		<use xlink:href="#triangle1" x="30" y= "-6.5"/>
+		<use xlink:href="#triangle1" x="30" y="-27.5"/>
+		<use xlink:href="#triangle2" x= "0" y="-28"/>
+		<use xlink:href="#triangle2" x= "0" y="-49"/>
+	</symbol>
+	<symbol id="system" viewBox="-40,-75 80,85">
+		<defs>
+			<path id="path1" d="m 0,  7 c  40,0  40,-35 0,-35" style="fill:none"/>
+			<path id="path2" d="m 0,-14 c -40,0 -40,-14 0,-14" style="fill:none"/>
+			<path id="triangle1" d="m 3, 0 h -6 l  3,-6 z" style="fill-opacity:1"/>
+			<path id="triangle2" d="m 0,-3 v  6 l -6,-3 z" style="fill-opacity:1"/>
+		</defs>
+		<use xlink:href="#system-base" x="-40" y="-75"/>
+		<use xlink:href="#path2"     x= "0" y="-21"/>
+		<use xlink:href="#path1"     x= "0" y="-42"/>
+		<use xlink:href="#triangle1" x="30" y="-48.5"/>
+		<use xlink:href="#triangle2" x= "0" y="-70"/>
+	</symbol>
+	<symbol id="system-basedots" viewBox="-40,-75 80,85">
+		<!--<rect x="-40" y="-75" width="80" height="85"/>-->
+		<use xlink:href="#system-base" x="-40" y="-75"/>
+		<circle r="2" cx="-30" cy=  "0" class="fill" style="stroke: hsl(-40, 100%, 70%); fill: hsl(-40, 100%, 90%)"/>
+		<circle r="2" cx= "10" cy="-28" class="fill" style="stroke: hsl(-20, 100%, 70%); fill: hsl(-20, 100%, 90%)"/>
+		<circle r="2" cx="-10" cy="-14" class="fill" style="stroke: hsl(  0, 100%, 70%); fill: hsl(  0, 100%, 90%)"/>
+		<circle r="2" cx= "10" cy="-49" class="fill" style="stroke: hsl( 20, 100%, 70%); fill: hsl( 20, 100%, 90%)"/>
+		<!--
+		<circle r="2" cx="-10" cy="-70" class="fill" style="stroke: hsl( 60, 100%, 70%); fill: hsl( 60, 100%, 90%)"/>
+		-->
+	</symbol>
+	<symbol id="system-dots" viewBox="-40,-75 80,85">
+		<!--<rect x="-40" y="-75" width="80" height="85"/>-->
+		<use xlink:href="#system" x="-40" y="-75"/>
+		<circle r="2" cx="-30" cy=  "0" class="fill" style="stroke: hsl(-40, 100%, 70%); fill: hsl(-40, 100%, 90%)"/>
+		<circle r="2" cx= "10" cy="-28" class="fill" style="stroke: hsl(-20, 100%, 70%); fill: hsl(-20, 100%, 90%)"/>
+		<circle r="2" cx="-10" cy="-14" class="fill" style="stroke: hsl(  0, 100%, 70%); fill: hsl(  0, 100%, 90%)"/>
+		<circle r="2" cx= "10" cy="-49" class="fill" style="stroke: hsl( 20, 100%, 70%); fill: hsl( 20, 100%, 90%)"/>
+		<circle r="2" cx="-15" cy="-36" class="fill" style="stroke: hsl( 40, 100%, 70%); fill: hsl( 40, 100%, 90%)"/>
+		<!--
+		<circle r="2" cx="-10" cy="-70" class="fill" style="stroke: hsl( 60, 100%, 70%); fill: hsl( 60, 100%, 90%)"/>
+		-->
+	</symbol>
+	<symbol id="system-sub1" viewBox="-40,-75 80,85">
+		<!--<rect x="-40" y="-75" width="80" height="85"/>-->
+		<use xlink:href="#system-basedots" x="-40" y="-75"/>
+		<use xlink:href="#path2"     x= "0" y="-21"/>
+		<path d="m 0,-35 c  50,0  50,-25 -75,-25" style="fill:none"/>
+		<path d="m -33,-62 v  6 l -6,-3 z" style="fill-opacity:1"/>
+	</symbol>
+	<symbol id="system-sub2" viewBox="-40,-75 80,85">
+		<!--<rect x="-40" y="-75" width="80" height="85"/>-->
+		<use xlink:href="#system-basedots" x="-40" y="-75"/>
+		<path d="m 0,-49 c -40,0 -40,14 35,14" style="fill:none"/>
+		<path d="m 30,-38 v  6 l 6,-3 z" style="fill-opacity:1"/>
+	</symbol>
+	<symbol id="system-sub3" viewBox="-40,-75 80,85">
+		<!--<rect x="-40" y="-75" width="80" height="85"/>-->
+		<use xlink:href="#system-basedots" x="-40" y="-75"/>
+		<path d="m 0,-49 c -50,0 -50,10 -20,10" style="fill:none"/>
+		<path d="m -25,-42 v  6 l 6,-3 z" style="fill-opacity:1"/>
+	</symbol>
+	<style>
+	@media print {
+		@page {
+			/* Remove header and footer when exporting */
+			margin: 0;
+		}
+	}
+	:root {
+		/* CUD color scheme */
+		/* http://www2.cudo.jp/wp/wp-content/uploads/2016/10/CUD_Colorset_Guidebook.pdf */
+		--cud-accent-red      : rgb(255, 75,  0);
+		--cud-accent-green    : rgb(  3,175,122);
+		--cud-accent-blue     : rgb(  0, 90,255);
+		--cud-accent-yellow   : rgb(255,241,  0);
+		--cud-accent-sky      : rgb( 77,196,255);
+		--cud-accent-pink     : rgb(255,128,130);
+		--cud-accent-orange   : rgb(246,170,  0);
+		--cud-accent-purple   : rgb(153,  0,153);
+		--cud-accent-brown    : rgb(128, 64,  0);
+		--cud-base-lightpink  : rgb(255,202,191);
+		--cud-base-cream      : rgb(255,255,128);
+		--cud-base-lime       : rgb(216,242, 85);
+		--cud-base-lightsky   : rgb(191,228,255);
+		--cud-base-beige      : rgb(255,202,128);
+		--cud-base-lightgreen : rgb(119,217,168);
+		--cud-base-lightpurple: rgb(201,172,230);
+		--cud-lightgray       : rgb(200,200,203);
+		--cud-gray            : rgb(132,145,158);
+	}
+	g, path, ellipse, circle {
+		fill: currentColor;
+		fill-opacity: 0.2;
+		stroke: currentColor;
+		stroke-width: 1.5;
+	}
+	use {
+		transform-origin: center;
+	}
+	text {
+		text-anchor: middle;
+		dominant-baseline: middle;
+	}
+	.cud-accent-red   { color: var(--cud-accent-red   ); }
+	.cud-accent-green { color: var(--cud-accent-green ); }
+	.cud-accent-blue  { color: var(--cud-accent-blue  ); }
+	.cud-accent-yellow{ color: var(--cud-accent-yellow); }
+	.cud-accent-sky   { color: var(--cud-accent-sky   ); }
+	.cud-accent-pink  { color: var(--cud-accent-pink  ); }
+	.cud-accent-orange{ color: var(--cud-accent-orange); }
+	.cud-accent-purple{ color: var(--cud-accent-purple); }
+	.cud-accent-brown { color: var(--cud-accent-brown ); }
+	.cud-gray         { color: var(--cud-gray         ); }
+	.fill {
+		fill-opacity: 1;
+		stroke-width: 1;
+	}
+	</style>
+
+	<use class="cud-accent-brown" x=  "0" y=  "0" width="600" xlink:href="#system-dots"/>
+	<use class="cud-accent-red"   x="-20" y="-20" width="200" xlink:href="#system-sub2"/>
+	<use class="cud-accent-green" x="150" y="150" width="200" xlink:href="#system-sub3"/>
+	<use class="cud-accent-blue"  x="390" y="100" width="200" xlink:href="#system-sub1"/>
+</svg>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-09-24T06:40:42+09:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>システムにおける創発</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="image/style.css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.11;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\require{newunicodechar}\unimathsetup{math-style=ISO,bold-style=ISO}
+\setmathfont{xits-math.otf}
+\usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
+\setmonofont{Noto Sans Mono CJK JP}
+\setmainfont[ BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
+\setmainjfont[BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
+\setsansjfont{Noto Sans CJK JP}
+\newunicodechar{🌱}{\includegraphics[width=1em]{image/seedling.png}}
+
+\renewcommand{\baselinestretch}{1.2}
+\setlength{\parskip}{6pt plus 2pt minus 2pt}
+\titlespacing{\chapter}{0pt}{10pt}{15pt}
+\titlespacing{\section}{0pt}{5pt plus 3pt minus 3pt}{3pt plus 1pt}
+\titlespacing{\subsection}{0pt}{3pt plus 2pt minus 2pt}{2pt plus 1pt}
+\titlespacing{\subsubsection}{0pt}{1pt plus 1pt minus 1pt}{1pt plus 1pt}
+
+\parindent = 1\zw
+
+\renewcommand{\alert      }[1]{\textcolor{RedOrange}{\textbf{#1}}}
+\renewcommand{\terminology}[1]{\textcolor{OliveGreen}{\textbf{#1}}}
+\renewcommand{\emph       }[1]{\textcolor{RoyalBlue}{\textbf{#1}}}
+
+\tcbset{fonttitle=\bfseries}
+\tcbset{propositionstyle/.style={colframe=RedOrange,     colback=RedOrange!2!white }}
+\tcbset{ definitionstyle/.style={colframe=OliveGreen,    colback=OliveGreen!2!white}}
+\tcbset{       notestyle/.style={colframe=black!75!white,colback=black!2!white     }}
+
+\hypersetup{bookmarksopen,bookmarksnumbered}
+
+\let\gt\undefined
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">情報学基礎 補助資料</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-em-gen.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-em.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-em-inclusion.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-em-gen.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-em.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-em-inclusion.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="ch-intro.html" data-scroll="ch-intro"><span class="codenumber">1</span> <span class="title">情報社会と情報学</span></a><ul>
+<li><a href="sec-intro-bg.html" data-scroll="sec-intro-bg">情報学を学ぶ背景</a></li>
+<li><a href="sec-intro-purpose.html" data-scroll="sec-intro-purpose">情報学を学ぶ目的</a></li>
+<li><a href="sec-intro-structure.html" data-scroll="sec-intro-structure">本稿の構成</a></li>
+<li><a href="sec-intro-bib.html" data-scroll="sec-intro-bib">関連分野と参考文献</a></li>
+<li><a href="sec-intro-symbol.html" data-scroll="sec-intro-symbol">本稿で用いる記号</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-sem.html" data-scroll="ch-sem"><span class="codenumber">2</span> <span class="title">記号と意味</span></a><ul>
+<li><a href="sec-sem-semiotics.html" data-scroll="sec-sem-semiotics">記号と意味</a></li>
+<li><a href="sec-sem-code.html" data-scroll="sec-sem-code">符号化と復号</a></li>
+<li><a href="sec-sem-subject.html" data-scroll="sec-sem-subject">主観性</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-info.html" data-scroll="ch-info"><span class="codenumber">3</span> <span class="title">情報</span></a><ul>
+<li><a href="sec-info-history.html" data-scroll="sec-info-history">情報の歴史</a></li>
+<li><a href="sec-info-def.html" data-scroll="sec-info-def">情報の定義</a></li>
+<li><a href="sec-info-class.html" data-scroll="sec-info-class">情報の分類</a></li>
+<li><a href="sec-info-subject.html" data-scroll="sec-info-subject">情報の主観性</a></li>
+<li><a href="sec-info-entropy.html" data-scroll="sec-info-entropy">情報の「量」</a></li>
+<li><a href="sec-info-code.html" data-scroll="sec-info-code">通信における符号</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-comm.html" data-scroll="ch-comm"><span class="codenumber">4</span> <span class="title">コミュニケーション</span></a><ul>
+<li><a href="sec-comm-model.html" data-scroll="sec-comm-model">コミュニケーション・モデル</a></li>
+<li><a href="sec-comm-step.html" data-scroll="sec-comm-step">コミュニケーションの段階</a></li>
+<li><a href="sec-comm-cont.html" data-scroll="sec-comm-cont">コミュニケーションの継続と断絶</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-media.html" data-scroll="ch-media"><span class="codenumber">5</span> <span class="title">メディア</span></a><ul>
+<li><a href="sec-media-bg.html" data-scroll="sec-media-bg">メディアとコミュニケーション</a></li>
+<li><a href="sec-media-def.html" data-scroll="sec-media-def">メディアの定義</a></li>
+<li><a href="sec-media-class.html" data-scroll="sec-media-class">メディアの分類</a></li>
+<li><a href="sec-media-influence.html" data-scroll="sec-media-influence">メディアが個人に与える影響</a></li>
+<li><a href="sec-media-literacy.html" data-scroll="sec-media-literacy">メディア・リテラシーとコミュニケーション能力</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-problem.html" data-scroll="ch-problem"><span class="codenumber">6</span> <span class="title">問題</span></a><ul>
+<li><a href="sec-problem-bg.html" data-scroll="sec-problem-bg">複雑性と問題</a></li>
+<li><a href="sec-problem-def.html" data-scroll="sec-problem-def">問題の定義</a></li>
+<li><a href="sec-problem-approach.html" data-scroll="sec-problem-approach">問題解決の方針</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-reduction.html" data-scroll="ch-reduction"><span class="codenumber">7</span> <span class="title">還元</span></a><ul>
+<li><a href="sec-reduction-bg.html" data-scroll="sec-reduction-bg">還元主義</a></li>
+<li><a href="sec-reduction-def.html" data-scroll="sec-reduction-def">還元の定義</a></li>
+<li><a href="sec-reduction-cond.html" data-scroll="sec-reduction-cond">還元の条件</a></li>
+<li><a href="sec-reduction-eg.html" data-scroll="sec-reduction-eg">還元の例</a></li>
+<li><a href="sec-reduction-model.html" data-scroll="sec-reduction-model">モデル</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-sys.html" data-scroll="ch-sys"><span class="codenumber">8</span> <span class="title">システム</span></a><ul>
+<li><a href="sec-sys-bg.html" data-scroll="sec-sys-bg">構造主義</a></li>
+<li><a href="sec-sys-def.html" data-scroll="sec-sys-def">システムの定義</a></li>
+<li><a href="sec-sys-dynamic.html" data-scroll="sec-sys-dynamic">システムの時間発展</a></li>
+<li><a href="sec-sys-eg.html" data-scroll="sec-sys-eg">システムの例</a></li>
+<li><a href="sec-sys-decompose.html" data-scroll="sec-sys-decompose">システムの分割</a></li>
+<li><a href="sec-sys-autopoiesis.html" data-scroll="sec-sys-autopoiesis">オートポイエーシスの影響</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-em.html" data-scroll="ch-em"><span class="codenumber">9</span> <span class="title">創発</span></a><ul>
+<li><a href="sec-em-bg.html" data-scroll="sec-em-bg">創発主義</a></li>
+<li><a href="sec-em-def.html" data-scroll="sec-em-def">アイデア</a></li>
+<li><a href="sec-em-gen.html" data-scroll="sec-em-gen">創発の方法</a></li>
+<li><a href="sec-em-sys.html" data-scroll="sec-em-sys" class="active">システムにおける創発</a></li>
+<li><a href="sec-em-inclusion.html" data-scroll="sec-em-inclusion">社会における包摂と排除</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-interference.html" data-scroll="ch-interference"><span class="codenumber">10</span> <span class="title">介入</span></a><ul>
+<li><a href="sec-interference-def.html" data-scroll="sec-interference-def">介入の定義</a></li>
+<li><a href="sec-interference-intent.html" data-scroll="sec-interference-intent">意図と予期</a></li>
+<li><a href="sec-interference-ex.html" data-scroll="sec-interference-ex">明示的な介入</a></li>
+<li><a href="sec-interference-im.html" data-scroll="sec-interference-im">暗示的な介入</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-logic.html" data-scroll="ch-logic"><span class="codenumber">11</span> <span class="title">論理</span></a><ul>
+<li><a href="sec-logic-purpose.html" data-scroll="sec-logic-purpose">論理の目的</a></li>
+<li><a href="sec-logic-def.html" data-scroll="sec-logic-def">定義</a></li>
+<li><a href="sec-logic-prop.html" data-scroll="sec-logic-prop">命題と定理</a></li>
+<li><a href="sec-logic-infer.html" data-scroll="sec-logic-infer">推論</a></li>
+<li><a href="sec-logic-science.html" data-scroll="sec-logic-science">科学における推論</a></li>
+</ul>
+</li>
+<li class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">参考文献</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">索引</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-em-sys"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">9.4</span> <span class="title">システムにおける創発</span>
+</h2>
+<a href="sec-em-sys.html" class="permalink">¶</a><section class="introduction" id="introduction-16"><p id="p-201">創発は、システムの時間発展において生じる現象である。 個人が発想する場合には心理システムでの創発とみなせ、集団で発想する場合には社会システムでの創発とみなせる。</p>
+<article class="remark-like" id="note-10"><h6 class="heading">
+<span class="type">注釈</span> <span class="codenumber">9.2</span>. <span class="title">創造システム.</span>
+</h6>
+<p id="p-202">井庭は、個人や組織における創発の過程を表す枠組みとして、<dfn class="terminology">創造システム</dfn>の理論を提唱している<a data-knowl="./knowl/bib-iba.html" title="Bibliographic Entry 61: An Autopoietic Systems Theory for Creativity">[61]</a><a data-knowl="./knowl/bib-iba-j.html" title="Bibliographic Entry 62: 創造システム理論の構想">[62]</a>。 井庭によれば、創造は<dfn class="terminology">発見</dfn>(<dfn class="terminology">discovery</dfn>)を要素とするシステムである。 発見は<dfn class="terminology">アイデア</dfn>、<dfn class="terminology">関連づけ</dfn>(<dfn class="terminology">association</dfn>)、<dfn class="terminology">帰結</dfn>(<dfn class="terminology">consequence</dfn>)の3つの選択からなる過程であり、発見が継続して生成されることで創造がなされるという。 ここでいうアイデアは、創造を行うシステム、つまりその個人や組織にとっての新たな情報であり、世間的に新しいものであるかは問われない。 井庭もYoungと同様、このアイデアをどう他の情報と関連付けるか、つまりどう相互の関連性を見出すかが重要だとしている。</p></article></section><section class="subsection" id="ssec-em-psy"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">9.4.1</span> <span class="title">心理システムでの創発</span>
+</h3>
+<a href="sec-em-sys.html#ssec-em-psy" class="permalink">¶</a><p id="p-203">システムが要素間の新たな関連性を見出すには、そのシステムがそれらの要素に参画しており、それぞれの要素に精通していることが必要である。 ある<em class="emphasis">システムが所属する他のシステムの部分を除いた、そのシステムに固有の部分</em>を、そのシステムの<dfn class="terminology">個性</dfn>(<dfn class="terminology">personality</dfn>)と呼ぶ<a data-knowl="./knowl/bib-borch.html" title="Bibliographic Entry 21: ニクラス・ルーマン入門――社会システム理論とは何か">[21]</a>。</p>
+<p id="p-204">例えば、あるシステムが他のシステムと図<a data-knowl="./knowl/fig-personality.html" title="図 9.3">9.3</a>の関係にあるとする。 このとき、図中で他のシステムに属する部分を除いた、桃色の部分が個性である。</p>
+<figure class="figure-like" id="fig-personality"><div style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="image/personality-char.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">図</span> <span class="codenumber">9.3.</span> 個性と人格</figcaption></figure><p id="p-205">個人による、つまり1つの<em class="emphasis">心理システムによる創発</em>では、心理システムの個性が特徴的であることが必要である。 ここでいう特徴的とは、その個人が所属する<em class="emphasis">他のシステムの組み合わせが他にない珍しいもの</em>である、ということを指す。 この組み合わせがよくあるものである場合には、心理システムが思考を重ねても、誰でも思い浮かぶ発想しか現れない。 一方、特徴的な個性をもつ場合には、心理システムの思考は他にないものになり、斬新なアイデアが生じる可能性が高い。</p></section><section class="subsection" id="ssec-em-soc"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">9.4.2</span> <span class="title">社会システムでの創発</span>
+</h3>
+<a href="sec-em-sys.html#ssec-em-soc" class="permalink">¶</a><p id="p-206">個人には限定合理性があるため、1つの心理システムによる創発にも限界がある。 そのため実際には、複数人が協働し、<em class="emphasis">社会システムによる創発</em>を行うことが多い。 社会システムによる創発では、複数の心理システムの個性を掛けあわせて、コミュニケーションを通じて個人の限定合理性を克服することが期待される。</p>
+<p id="p-207">社会システムによる創発においても、新たなアイデアを生み出すには、<em class="emphasis">社会システムの個性が特徴的</em>であることが必要である。 社会システムの個性が特徴的であるためにはまず、心理システムの場合と同様に、社会システムが所属する他の心理システムの組み合わせが珍しいものである必要がある。 例えば、チームの人選を行う際には、似た個性を持つメンバーではなく、できるだけ個性の異なるメンバーを集める必要がある。</p>
+<p id="p-208">社会システムはコミュニケーションを要素とするため、コミュニケーションなしには社会システムによる創発はなしえない。 コミュニケーション斬新なアイデアを生み出すには、それぞれの心理システムの個性が反映されたコミュニケーションが必要である。 いくら個々のメンバーが特徴的な個性を持っていても、そうした個性を持つことが他のメンバーとのコミュニケーションの俎上に登らなければ、社会システムによる創発には貢献しない。 このように、<em class="emphasis">ある心理システムを他の心理システムがコミュニケーションでどう扱うか</em>を、そのシステムの<dfn class="terminology">人格</dfn>(<dfn class="terminology">character</dfn>)という<a data-knowl="./knowl/bib-borch.html" title="Bibliographic Entry 21: ニクラス・ルーマン入門――社会システム理論とは何か">[21]</a>。 従って社会システムによる創発では、個々のメンバーがどのような個性を持つ人間であるかをチーム内で共有させることが必要である。 個々のメンバーの<em class="emphasis">個性を人格として顕在化し、メンバーの個性をチームの個性として取り込む</em>ことで、それを組み合わせた斬新なアイデアが生じる。</p>
+<article class="remark-like" id="note-11"><h6 class="heading">
+<span class="type">注釈</span> <span class="codenumber">9.4</span>. <span class="title">知的財産.</span>
+</h6>
+<p id="p-209">知的財産法は、創発の促進を目的に存在する法的な枠組みの総称であり、その概略を図<a data-knowl="./knowl/fig-law-ip.html" title="図 9.5">9.5</a>に示す。 現代における知的財産法の枠組みでは、基本法としての知的財産基本法<a data-knowl="./knowl/bib-law-ip.html" title="Bibliographic Entry 70: 知的財産基本法">[70]</a>があり、その下に特許法<a data-knowl="./knowl/bib-law-patent.html" title="Bibliographic Entry 71: 特許法">[71]</a>、実用新案法、意匠法、商標法、著作権法<a data-knowl="./knowl/bib-law-copyright.html" title="Bibliographic Entry 72: 著作権法">[72]</a>などの個別法が置かれている。</p>
+<p id="p-210">知的財産基本法では、その目的を“新たな知的財産の創造及びその効果的な活用による付加価値の創出”としている。 また特許法は“発明の保護及び利用を図ることにより、発明を奨励し、もつて<em class="emphasis">産業の発達</em>に寄与すること”、著作権法は“著作者の権利及びこれに隣接する権利を定め、これらの文化的所産の<em class="emphasis">公正な利用</em>に留意しつつ、著作者等の<em class="emphasis">権利の保護</em>を図り、もつて<em class="emphasis">文化の発展</em>に寄与すること”を目的としている。 ここから、知的財産法はいずれも、それぞれの分野における創発の促進を目的としていることが分かる。</p>
+<p id="p-211">知的財産基本法では、<dfn class="terminology">知的財産</dfn>を<em class="emphasis">人間の創造的活動により生み出されるもの</em>と定義している。 知的財産を生み出した者には<dfn class="terminology">知的財産権</dfn>を付与する一方で、知的財産を効果的に活用する方法を定めている。 特許法は“自然法則を利用した技術的<em class="emphasis">思想</em>の創作のうち高度のもの”を<dfn class="terminology">発明</dfn>(アイデア)と定義し、発明者に<dfn class="terminology">特許</dfn>(<dfn class="terminology">patent</dfn>)を与えて保護する。 また著作権法は“<em class="emphasis">思想又は感情</em>を創作的に<em class="emphasis">表現</em>したものであつて、文芸、学術、美術又は音楽の範囲に属するもの”を<dfn class="terminology">著作物</dfn>と定義し、その創作者に<dfn class="terminology">著作権</dfn>(<dfn class="terminology">copyright</dfn>)を与えて保護する。</p>
+<p id="p-212">また、社会システムによる創発を促進する、職務発明や職務著作といった制度が存在する。 <figure class="figure-like" id="fig-law-ip"><div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/law-ip.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">図</span> <span class="codenumber">9.5.</span> 知的財産に関する法的な枠組み</figcaption></figure></p></article></section></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.11/login.js"></script>
+</body>
+</html>

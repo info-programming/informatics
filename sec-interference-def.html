@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-09-24T06:40:42+09:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>介入の定義</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="image/style.css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.11;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\require{newunicodechar}\unimathsetup{math-style=ISO,bold-style=ISO}
+\setmathfont{xits-math.otf}
+\usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
+\setmonofont{Noto Sans Mono CJK JP}
+\setmainfont[ BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
+\setmainjfont[BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
+\setsansjfont{Noto Sans CJK JP}
+\newunicodechar{🌱}{\includegraphics[width=1em]{image/seedling.png}}
+
+\renewcommand{\baselinestretch}{1.2}
+\setlength{\parskip}{6pt plus 2pt minus 2pt}
+\titlespacing{\chapter}{0pt}{10pt}{15pt}
+\titlespacing{\section}{0pt}{5pt plus 3pt minus 3pt}{3pt plus 1pt}
+\titlespacing{\subsection}{0pt}{3pt plus 2pt minus 2pt}{2pt plus 1pt}
+\titlespacing{\subsubsection}{0pt}{1pt plus 1pt minus 1pt}{1pt plus 1pt}
+
+\parindent = 1\zw
+
+\renewcommand{\alert      }[1]{\textcolor{RedOrange}{\textbf{#1}}}
+\renewcommand{\terminology}[1]{\textcolor{OliveGreen}{\textbf{#1}}}
+\renewcommand{\emph       }[1]{\textcolor{RoyalBlue}{\textbf{#1}}}
+
+\tcbset{fonttitle=\bfseries}
+\tcbset{propositionstyle/.style={colframe=RedOrange,     colback=RedOrange!2!white }}
+\tcbset{ definitionstyle/.style={colframe=OliveGreen,    colback=OliveGreen!2!white}}
+\tcbset{       notestyle/.style={colframe=black!75!white,colback=black!2!white     }}
+
+\hypersetup{bookmarksopen,bookmarksnumbered}
+
+\let\gt\undefined
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">情報学基礎 補助資料</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="ch-interference.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-interference.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-interference-intent.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="ch-interference.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-interference.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-interference-intent.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="ch-intro.html" data-scroll="ch-intro"><span class="codenumber">1</span> <span class="title">情報社会と情報学</span></a><ul>
+<li><a href="sec-intro-bg.html" data-scroll="sec-intro-bg">情報学を学ぶ背景</a></li>
+<li><a href="sec-intro-purpose.html" data-scroll="sec-intro-purpose">情報学を学ぶ目的</a></li>
+<li><a href="sec-intro-structure.html" data-scroll="sec-intro-structure">本稿の構成</a></li>
+<li><a href="sec-intro-bib.html" data-scroll="sec-intro-bib">関連分野と参考文献</a></li>
+<li><a href="sec-intro-symbol.html" data-scroll="sec-intro-symbol">本稿で用いる記号</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-sem.html" data-scroll="ch-sem"><span class="codenumber">2</span> <span class="title">記号と意味</span></a><ul>
+<li><a href="sec-sem-semiotics.html" data-scroll="sec-sem-semiotics">記号と意味</a></li>
+<li><a href="sec-sem-code.html" data-scroll="sec-sem-code">符号化と復号</a></li>
+<li><a href="sec-sem-subject.html" data-scroll="sec-sem-subject">主観性</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-info.html" data-scroll="ch-info"><span class="codenumber">3</span> <span class="title">情報</span></a><ul>
+<li><a href="sec-info-history.html" data-scroll="sec-info-history">情報の歴史</a></li>
+<li><a href="sec-info-def.html" data-scroll="sec-info-def">情報の定義</a></li>
+<li><a href="sec-info-class.html" data-scroll="sec-info-class">情報の分類</a></li>
+<li><a href="sec-info-subject.html" data-scroll="sec-info-subject">情報の主観性</a></li>
+<li><a href="sec-info-entropy.html" data-scroll="sec-info-entropy">情報の「量」</a></li>
+<li><a href="sec-info-code.html" data-scroll="sec-info-code">通信における符号</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-comm.html" data-scroll="ch-comm"><span class="codenumber">4</span> <span class="title">コミュニケーション</span></a><ul>
+<li><a href="sec-comm-model.html" data-scroll="sec-comm-model">コミュニケーション・モデル</a></li>
+<li><a href="sec-comm-step.html" data-scroll="sec-comm-step">コミュニケーションの段階</a></li>
+<li><a href="sec-comm-cont.html" data-scroll="sec-comm-cont">コミュニケーションの継続と断絶</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-media.html" data-scroll="ch-media"><span class="codenumber">5</span> <span class="title">メディア</span></a><ul>
+<li><a href="sec-media-bg.html" data-scroll="sec-media-bg">メディアとコミュニケーション</a></li>
+<li><a href="sec-media-def.html" data-scroll="sec-media-def">メディアの定義</a></li>
+<li><a href="sec-media-class.html" data-scroll="sec-media-class">メディアの分類</a></li>
+<li><a href="sec-media-influence.html" data-scroll="sec-media-influence">メディアが個人に与える影響</a></li>
+<li><a href="sec-media-literacy.html" data-scroll="sec-media-literacy">メディア・リテラシーとコミュニケーション能力</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-problem.html" data-scroll="ch-problem"><span class="codenumber">6</span> <span class="title">問題</span></a><ul>
+<li><a href="sec-problem-bg.html" data-scroll="sec-problem-bg">複雑性と問題</a></li>
+<li><a href="sec-problem-def.html" data-scroll="sec-problem-def">問題の定義</a></li>
+<li><a href="sec-problem-approach.html" data-scroll="sec-problem-approach">問題解決の方針</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-reduction.html" data-scroll="ch-reduction"><span class="codenumber">7</span> <span class="title">還元</span></a><ul>
+<li><a href="sec-reduction-bg.html" data-scroll="sec-reduction-bg">還元主義</a></li>
+<li><a href="sec-reduction-def.html" data-scroll="sec-reduction-def">還元の定義</a></li>
+<li><a href="sec-reduction-cond.html" data-scroll="sec-reduction-cond">還元の条件</a></li>
+<li><a href="sec-reduction-eg.html" data-scroll="sec-reduction-eg">還元の例</a></li>
+<li><a href="sec-reduction-model.html" data-scroll="sec-reduction-model">モデル</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-sys.html" data-scroll="ch-sys"><span class="codenumber">8</span> <span class="title">システム</span></a><ul>
+<li><a href="sec-sys-bg.html" data-scroll="sec-sys-bg">構造主義</a></li>
+<li><a href="sec-sys-def.html" data-scroll="sec-sys-def">システムの定義</a></li>
+<li><a href="sec-sys-dynamic.html" data-scroll="sec-sys-dynamic">システムの時間発展</a></li>
+<li><a href="sec-sys-eg.html" data-scroll="sec-sys-eg">システムの例</a></li>
+<li><a href="sec-sys-decompose.html" data-scroll="sec-sys-decompose">システムの分割</a></li>
+<li><a href="sec-sys-autopoiesis.html" data-scroll="sec-sys-autopoiesis">オートポイエーシスの影響</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-em.html" data-scroll="ch-em"><span class="codenumber">9</span> <span class="title">創発</span></a><ul>
+<li><a href="sec-em-bg.html" data-scroll="sec-em-bg">創発主義</a></li>
+<li><a href="sec-em-def.html" data-scroll="sec-em-def">アイデア</a></li>
+<li><a href="sec-em-gen.html" data-scroll="sec-em-gen">創発の方法</a></li>
+<li><a href="sec-em-sys.html" data-scroll="sec-em-sys">システムにおける創発</a></li>
+<li><a href="sec-em-inclusion.html" data-scroll="sec-em-inclusion">社会における包摂と排除</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-interference.html" data-scroll="ch-interference"><span class="codenumber">10</span> <span class="title">介入</span></a><ul>
+<li><a href="sec-interference-def.html" data-scroll="sec-interference-def" class="active">介入の定義</a></li>
+<li><a href="sec-interference-intent.html" data-scroll="sec-interference-intent">意図と予期</a></li>
+<li><a href="sec-interference-ex.html" data-scroll="sec-interference-ex">明示的な介入</a></li>
+<li><a href="sec-interference-im.html" data-scroll="sec-interference-im">暗示的な介入</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-logic.html" data-scroll="ch-logic"><span class="codenumber">11</span> <span class="title">論理</span></a><ul>
+<li><a href="sec-logic-purpose.html" data-scroll="sec-logic-purpose">論理の目的</a></li>
+<li><a href="sec-logic-def.html" data-scroll="sec-logic-def">定義</a></li>
+<li><a href="sec-logic-prop.html" data-scroll="sec-logic-prop">命題と定理</a></li>
+<li><a href="sec-logic-infer.html" data-scroll="sec-logic-infer">推論</a></li>
+<li><a href="sec-logic-science.html" data-scroll="sec-logic-science">科学における推論</a></li>
+</ul>
+</li>
+<li class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">参考文献</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">索引</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-interference-def"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">10.1</span> <span class="title">介入の定義</span>
+</h2>
+<a href="sec-interference-def.html" class="permalink">¶</a><p id="p-223">Luhmannは、<em class="emphasis">あるシステムがその行為を通して、他のシステムがどのように行為するか規定</em>する行為を<dfn class="terminology">介入</dfn>(<dfn class="terminology">interference</dfn>)と呼んだ<a data-knowl="./knowl/bib-luhmann-interfere.html" title="Bibliographic Entry 20: Wie ist Erziehung Möglich? - Eine wissenschaftssoziologische Analyse der Erziehungswissenschaft (教育が可能であるとはどういうことか?――教育科学の社会科学的分析 (下地ら訳))">[20]</a>。 端的にいえば、介入とは、他者や組織など<em class="emphasis">他のシステムを変化させるために行うコミュニケーション</em>である。 本章では、介入の対象となる他者や組織などのシステムを<dfn class="terminology">対象者</dfn>(<dfn class="terminology">target</dfn>)と呼ぶ。</p>
+<article class="definition-like" id="definition-19"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">10.1</span>. <span class="title">介入.</span>
+</h6>\(S, S'\)をシステムとし、時刻\(t = T\)で\(S'\)が何らかの行為を行ったときの\(t = T + 1\)における\(S\)の状態を\(\hat{S}(T + 1)\)、\(S'\)が行為を行わなかったときの\(t = T + 1\)における\(S\)の状態を\(S(T + 1)\)とする。 このとき、\(\hat{S}(T + 1) \ne S(T + 1)\)であれば、システム\(S'\)はシステム\(S\)に時刻\(t = T\)で<dfn class="terminology">介入</dfn>(<dfn class="terminology">interference</dfn>)したという。</article><p id="p-224"><em class="emphasis">勧誘</em>、<em class="emphasis">印象操作</em>、<em class="emphasis">プレゼンテーション</em>、<em class="emphasis">説得</em>、<em class="emphasis">檄文</em>、<em class="emphasis">指示</em>、<em class="emphasis">命令</em>などはいずれも、聴衆である心理システムの思考に<dfn class="terminology">明示的</dfn>(<dfn class="terminology">explicit</dfn>)に介入し、その言動の変容を促す行為である。 また、施設などにおける<em class="emphasis">誘導</em>、モノのデザインにおける<em class="emphasis">afford</em>や、Luhmannが介入の例に挙げた<em class="emphasis">教育</em>は、対象者に明示せずとも、特定の行為や学習を<dfn class="terminology">暗示的</dfn>(<dfn class="terminology">implicit</dfn>)に促す点で同様であり、これらもここでいう介入に当たる。</p>
+<p id="p-225">図<a data-knowl="./knowl/fig-system-interference.html" title="図 10.2">10.2</a>に、介入の概念図を示す。 図では、ある個人(心理システム)の現在の状態に対して他者(別のシステム)が介入している。 この介入により、本来のシステムのオートポイエーシスによって達する状態とは異なる状態に至らせる様子を、点線の矢印で示している。</p>
+<figure class="figure-like" id="fig-system-interference"><div style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="image/system-interference.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">図</span> <span class="codenumber">10.2.</span> 介入</figcaption></figure></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.11/login.js"></script>
+</body>
+</html>

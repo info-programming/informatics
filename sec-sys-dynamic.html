@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-09-24T06:40:41+09:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>システムの時間発展</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="image/style.css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.11;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\require{newunicodechar}\unimathsetup{math-style=ISO,bold-style=ISO}
+\setmathfont{xits-math.otf}
+\usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
+\setmonofont{Noto Sans Mono CJK JP}
+\setmainfont[ BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
+\setmainjfont[BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
+\setsansjfont{Noto Sans CJK JP}
+\newunicodechar{🌱}{\includegraphics[width=1em]{image/seedling.png}}
+
+\renewcommand{\baselinestretch}{1.2}
+\setlength{\parskip}{6pt plus 2pt minus 2pt}
+\titlespacing{\chapter}{0pt}{10pt}{15pt}
+\titlespacing{\section}{0pt}{5pt plus 3pt minus 3pt}{3pt plus 1pt}
+\titlespacing{\subsection}{0pt}{3pt plus 2pt minus 2pt}{2pt plus 1pt}
+\titlespacing{\subsubsection}{0pt}{1pt plus 1pt minus 1pt}{1pt plus 1pt}
+
+\parindent = 1\zw
+
+\renewcommand{\alert      }[1]{\textcolor{RedOrange}{\textbf{#1}}}
+\renewcommand{\terminology}[1]{\textcolor{OliveGreen}{\textbf{#1}}}
+\renewcommand{\emph       }[1]{\textcolor{RoyalBlue}{\textbf{#1}}}
+
+\tcbset{fonttitle=\bfseries}
+\tcbset{propositionstyle/.style={colframe=RedOrange,     colback=RedOrange!2!white }}
+\tcbset{ definitionstyle/.style={colframe=OliveGreen,    colback=OliveGreen!2!white}}
+\tcbset{       notestyle/.style={colframe=black!75!white,colback=black!2!white     }}
+
+\hypersetup{bookmarksopen,bookmarksnumbered}
+
+\let\gt\undefined
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">情報学基礎 補助資料</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-sys-def.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-sys.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-sys-eg.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-sys-def.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-sys.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-sys-eg.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="ch-intro.html" data-scroll="ch-intro"><span class="codenumber">1</span> <span class="title">情報社会と情報学</span></a><ul>
+<li><a href="sec-intro-bg.html" data-scroll="sec-intro-bg">情報学を学ぶ背景</a></li>
+<li><a href="sec-intro-purpose.html" data-scroll="sec-intro-purpose">情報学を学ぶ目的</a></li>
+<li><a href="sec-intro-structure.html" data-scroll="sec-intro-structure">本稿の構成</a></li>
+<li><a href="sec-intro-bib.html" data-scroll="sec-intro-bib">関連分野と参考文献</a></li>
+<li><a href="sec-intro-symbol.html" data-scroll="sec-intro-symbol">本稿で用いる記号</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-sem.html" data-scroll="ch-sem"><span class="codenumber">2</span> <span class="title">記号と意味</span></a><ul>
+<li><a href="sec-sem-semiotics.html" data-scroll="sec-sem-semiotics">記号と意味</a></li>
+<li><a href="sec-sem-code.html" data-scroll="sec-sem-code">符号化と復号</a></li>
+<li><a href="sec-sem-subject.html" data-scroll="sec-sem-subject">主観性</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-info.html" data-scroll="ch-info"><span class="codenumber">3</span> <span class="title">情報</span></a><ul>
+<li><a href="sec-info-history.html" data-scroll="sec-info-history">情報の歴史</a></li>
+<li><a href="sec-info-def.html" data-scroll="sec-info-def">情報の定義</a></li>
+<li><a href="sec-info-class.html" data-scroll="sec-info-class">情報の分類</a></li>
+<li><a href="sec-info-subject.html" data-scroll="sec-info-subject">情報の主観性</a></li>
+<li><a href="sec-info-entropy.html" data-scroll="sec-info-entropy">情報の「量」</a></li>
+<li><a href="sec-info-code.html" data-scroll="sec-info-code">通信における符号</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-comm.html" data-scroll="ch-comm"><span class="codenumber">4</span> <span class="title">コミュニケーション</span></a><ul>
+<li><a href="sec-comm-model.html" data-scroll="sec-comm-model">コミュニケーション・モデル</a></li>
+<li><a href="sec-comm-step.html" data-scroll="sec-comm-step">コミュニケーションの段階</a></li>
+<li><a href="sec-comm-cont.html" data-scroll="sec-comm-cont">コミュニケーションの継続と断絶</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-media.html" data-scroll="ch-media"><span class="codenumber">5</span> <span class="title">メディア</span></a><ul>
+<li><a href="sec-media-bg.html" data-scroll="sec-media-bg">メディアとコミュニケーション</a></li>
+<li><a href="sec-media-def.html" data-scroll="sec-media-def">メディアの定義</a></li>
+<li><a href="sec-media-class.html" data-scroll="sec-media-class">メディアの分類</a></li>
+<li><a href="sec-media-influence.html" data-scroll="sec-media-influence">メディアが個人に与える影響</a></li>
+<li><a href="sec-media-literacy.html" data-scroll="sec-media-literacy">メディア・リテラシーとコミュニケーション能力</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-problem.html" data-scroll="ch-problem"><span class="codenumber">6</span> <span class="title">問題</span></a><ul>
+<li><a href="sec-problem-bg.html" data-scroll="sec-problem-bg">複雑性と問題</a></li>
+<li><a href="sec-problem-def.html" data-scroll="sec-problem-def">問題の定義</a></li>
+<li><a href="sec-problem-approach.html" data-scroll="sec-problem-approach">問題解決の方針</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-reduction.html" data-scroll="ch-reduction"><span class="codenumber">7</span> <span class="title">還元</span></a><ul>
+<li><a href="sec-reduction-bg.html" data-scroll="sec-reduction-bg">還元主義</a></li>
+<li><a href="sec-reduction-def.html" data-scroll="sec-reduction-def">還元の定義</a></li>
+<li><a href="sec-reduction-cond.html" data-scroll="sec-reduction-cond">還元の条件</a></li>
+<li><a href="sec-reduction-eg.html" data-scroll="sec-reduction-eg">還元の例</a></li>
+<li><a href="sec-reduction-model.html" data-scroll="sec-reduction-model">モデル</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-sys.html" data-scroll="ch-sys"><span class="codenumber">8</span> <span class="title">システム</span></a><ul>
+<li><a href="sec-sys-bg.html" data-scroll="sec-sys-bg">構造主義</a></li>
+<li><a href="sec-sys-def.html" data-scroll="sec-sys-def">システムの定義</a></li>
+<li><a href="sec-sys-dynamic.html" data-scroll="sec-sys-dynamic" class="active">システムの時間発展</a></li>
+<li><a href="sec-sys-eg.html" data-scroll="sec-sys-eg">システムの例</a></li>
+<li><a href="sec-sys-decompose.html" data-scroll="sec-sys-decompose">システムの分割</a></li>
+<li><a href="sec-sys-autopoiesis.html" data-scroll="sec-sys-autopoiesis">オートポイエーシスの影響</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-em.html" data-scroll="ch-em"><span class="codenumber">9</span> <span class="title">創発</span></a><ul>
+<li><a href="sec-em-bg.html" data-scroll="sec-em-bg">創発主義</a></li>
+<li><a href="sec-em-def.html" data-scroll="sec-em-def">アイデア</a></li>
+<li><a href="sec-em-gen.html" data-scroll="sec-em-gen">創発の方法</a></li>
+<li><a href="sec-em-sys.html" data-scroll="sec-em-sys">システムにおける創発</a></li>
+<li><a href="sec-em-inclusion.html" data-scroll="sec-em-inclusion">社会における包摂と排除</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-interference.html" data-scroll="ch-interference"><span class="codenumber">10</span> <span class="title">介入</span></a><ul>
+<li><a href="sec-interference-def.html" data-scroll="sec-interference-def">介入の定義</a></li>
+<li><a href="sec-interference-intent.html" data-scroll="sec-interference-intent">意図と予期</a></li>
+<li><a href="sec-interference-ex.html" data-scroll="sec-interference-ex">明示的な介入</a></li>
+<li><a href="sec-interference-im.html" data-scroll="sec-interference-im">暗示的な介入</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-logic.html" data-scroll="ch-logic"><span class="codenumber">11</span> <span class="title">論理</span></a><ul>
+<li><a href="sec-logic-purpose.html" data-scroll="sec-logic-purpose">論理の目的</a></li>
+<li><a href="sec-logic-def.html" data-scroll="sec-logic-def">定義</a></li>
+<li><a href="sec-logic-prop.html" data-scroll="sec-logic-prop">命題と定理</a></li>
+<li><a href="sec-logic-infer.html" data-scroll="sec-logic-infer">推論</a></li>
+<li><a href="sec-logic-science.html" data-scroll="sec-logic-science">科学における推論</a></li>
+</ul>
+</li>
+<li class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">参考文献</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">索引</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-sys-dynamic"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">8.3</span> <span class="title">システムの時間発展</span>
+</h2>
+<a href="sec-sys-dynamic.html" class="permalink">¶</a><section class="introduction" id="introduction-12"><p id="p-149">時間の経過により、システムの要素が新たに生み出されたり、要素の間に新たな関係が生じたりして、構造が<dfn class="terminology">動的</dfn>(<dfn class="terminology">dynamic</dfn>)に変化する。 このように<em class="emphasis">システムが自律的に作動し、自身で変化</em>していく性質を<dfn class="terminology">オートポイエーシス</dfn>(<dfn class="terminology">autopoiesis</dfn>)または<dfn class="terminology">自己創発</dfn>という<a data-knowl="./knowl/bib-maturana-j.html" title="Bibliographic Entry 40: オートポイエーシス――生命システムとはなにか">[40]</a><a data-knowl="./knowl/bib-kawamoto.html" title="Bibliographic Entry 41: オートポイエーシス――第三世代システム">[41]</a>。</p></section><section class="subsection" id="ssec-sys-state"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">8.3.1</span> <span class="title">状態</span>
+</h3>
+<a href="sec-sys-dynamic.html#ssec-sys-state" class="permalink">¶</a><p id="p-150">それぞれの時刻でのシステムの構造を、そのシステムの<dfn class="terminology">状態</dfn>(<dfn class="terminology">state</dfn>)という。</p>
+<article class="definition-like" id="definition-14"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">8.6</span>. <span class="title">状態.</span>
+</h6>ある<em class="emphasis">時刻\(t\)におけるシステム\(S\)の構造</em>を、\(S\)の時刻\(t\)における<dfn class="terminology">状態</dfn>(<dfn class="terminology">state</dfn>)といい、\(S(t) = (V(t), E(t))\)と表す。 ここで\(V(t), E(t)\)はそれぞれ、\(S(t)\)の要素の集合と構造である。 最初の時刻、即ち時刻0におけるシステムの状態\(S(0)\)を、システム\(S\)の<dfn class="terminology">初期状態</dfn>(<dfn class="terminology">initial state</dfn>)という。 またシステムの状態が一定になり、もはや変化しなくなったとき、その状態を<dfn class="terminology">定常状態</dfn>という。</article><p id="p-151">システムは要素の集合\(V\)と構造\(E\)の組\((V, E)\)であるから、システムの状態が変化すると、\(V\)か\(E\)の少なくとも一方が変化する。 \(V\)に新たな要素\(v\)が生じたとき、システムの定義より、\(v\)と他の要素\(v_k (\in V)\)との関係\((v, v_k) (\in E)\)も同時に生じる。 一方、\(V\)から要素\(v\)が消えたとき、システムの定義より、\(v\)と他の要素\(v_k (\in V)\)との関係\((v, v_k) (\in E)\)も同時に消える。 従って、<em class="alert">システム\((V, E)\)の状態が変化することは、システムの構造\(E\)が変化することと同値</em>であり、構造の変化についてのみ議論すればよい。</p>
+<p id="p-152">システムの構造が変化して状態が変化することを、<dfn class="terminology">オートポイエーシス</dfn>(<dfn class="terminology">autopoiesis</dfn>)または<dfn class="terminology">自己創発</dfn>という。</p>
+<article class="definition-like" id="definition-15"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">8.7</span>. <span class="title">オートポイエーシス.</span>
+</h6>時刻\(t = T\)において\(S(T-1) \ne S(T)\)となるとき、システム\(S\)は\(t = T\)において<dfn class="terminology">オートポイエーシス</dfn>(<dfn class="terminology">autopoiesis</dfn>)が生じた、または<dfn class="terminology">自己創発</dfn>したという。</article><p id="p-153">図<a data-knowl="./knowl/fig-autopoiesis.html" title="図 8.8">8.8</a>に、システムのオートポイエーシスの模式図を示す。図<a data-knowl="./knowl/fig-autopoiesis.html" title="図 8.8">8.8</a>では、丸印でシステムの状態を示し、状態間を結ぶ矢印でオートポイエーシスを示した。</p>
+<figure class="figure-like" id="fig-autopoiesis"><div style="width: 25%; margin-left: 37.5%; margin-right: 37.5%;"><img src="image/system-autopoiesis.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">図</span> <span class="codenumber">8.8.</span> システムのオートポイエーシス</figcaption></figure><article class="remark-like" id="note-8"><h6 class="heading">
+<span class="type">注釈</span> <span class="codenumber">8.9</span>. <span class="title">力学系.</span>
+</h6>
+<p id="p-154">システムにおける動的な構造の変化を強調して、システムを<dfn class="terminology">力学系</dfn>(<dfn class="terminology">dynamical system</dfn>)や<dfn class="terminology">複雑系</dfn>(<dfn class="terminology">complex system</dfn>)ということがある。 この「力学」はdynamicalの訳語であり、物理における「力学」との直接的な関係はない。</p>
+<p id="p-155">力学系では、状態を\(n\)個の変数\(x_1, \cdots, x_n\)で表せると仮定する。 状態の変化を\(n\)個の関数\(f_1, \cdots, f_n\)で表せるとしたとき、力学系は次の\(n\)個の微分方程式で表される。</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{d}{dt} x_i = f_i(x_1, \cdots, x_n, t) (i = 1, \cdots, n)
+\end{equation*}
+</div>
+<p id="p-156">力学系は、初期状態の微小な差が系全体の挙動に影響するバタフライ効果など、カオス理論の基礎になっている。</p></article></section><section class="subsection" id="ssec-sys-close"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">8.3.2</span> <span class="title">閉鎖性</span>
+</h3>
+<a href="sec-sys-dynamic.html#ssec-sys-close" class="permalink">¶</a><p id="p-157">円という点の集合が円周を境界に持つように、システムもまた<dfn class="terminology">境界</dfn>をもつ。 例えば、学級という組織はその学級に所属している生徒からなるシステムであり、他学級の生徒はその外部にある。 このように、あるシステムの<em class="emphasis">境界の外部</em>を、そのシステムの<dfn class="terminology">環境</dfn>という。</p>
+<p id="p-158">システムは、その境界の外側、つまり環境から影響されるかどうかにより、開放系、半閉鎖系、閉鎖系に分類できる。 ガラパゴス諸島の生態系のように、<em class="emphasis">環境の影響を受けないシステム</em>を<dfn class="terminology">閉鎖系</dfn>(<dfn class="terminology">closed system</dfn>)という。 一方、入力に従って処理を行う情報システムのように、<em class="emphasis">環境の影響を受けるシステム</em>を<dfn class="terminology">開放系</dfn>(<dfn class="terminology">open system</dfn>)という。</p>
+<p id="p-159">開放系は更に、<em class="emphasis">間接的に</em>環境から影響を受けるが、環境から直接影響を及ぼすことができない<dfn class="terminology">半閉鎖系</dfn>(<dfn class="terminology">semi-closed system</dfn>)と、直接的に環境から影響を受ける通常の開放系に分類できる。 半閉鎖系は、システムの<em class="emphasis">内部から外部を観察し、外部の変化に反応</em>することで、間接的に環境の影響を受ける。 内部からの観察や反応がなければ、外部からどれだけ強い刺激を与えても、半閉鎖系のシステムに影響を及ぼすことはできない。 また内部から反応がありシステムが変化した場合も、その反応が外部から与えた刺激の通りのものになるとは限らない。</p>
+<p id="p-160">図<a data-knowl="./knowl/fig-system-2d-open.html" title="図 8.10">8.10</a>、図<a data-knowl="./knowl/fig-system-2d-semiclosed.html" title="図 8.11">8.11</a>、図<a data-knowl="./knowl/fig-system-2d-closed.html" title="図 8.12">8.12</a>に、システムを閉鎖性により分類して示した。 図では、システムを円で、システムの境界を円周で表している。 外部の影響を受ける開放系(図<a data-knowl="./knowl/fig-system-2d-open.html" title="図 8.10">8.10</a>、図<a data-knowl="./knowl/fig-system-2d-semiclosed.html" title="図 8.11">8.11</a>)は点線で、外部の影響を受けない閉鎖系(図<a data-knowl="./knowl/fig-system-2d-closed.html" title="図 8.12">8.12</a>)は実線とした。 また、システムが時間の経過と共に変化することを、境界に三角を付して表した。</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:9.166666666666666%;margin-right:9.166666666666666%;">
+<div class="sbspanel" style="width:18.3673469387755%;justify-content:flex-start;"><figure class="figure-like" id="fig-system-2d-open"><img src="image/system-2d-open.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">図</span> <span class="codenumber">8.10.</span> 開放系</figcaption></figure></div>
+<div class="sbspanel" style="width:18.3673469387755%;justify-content:flex-start;"><figure class="figure-like" id="fig-system-2d-semiclosed"><img src="image/system-2d-semiclosed.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">図</span> <span class="codenumber">8.11.</span> 半閉鎖系</figcaption></figure></div>
+<div class="sbspanel" style="width:18.3673469387755%;justify-content:flex-start;"><figure class="figure-like" id="fig-system-2d-closed"><img src="image/system-2d-closed.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">図</span> <span class="codenumber">8.12.</span> 閉鎖系</figcaption></figure></div>
+</div></div>
+<p id="p-161">図<a data-knowl="./knowl/fig-autopoiesis-open.html" title="図 8.13">8.13</a>、図<a data-knowl="./knowl/fig-autopoiesis-semiclosed.html" title="図 8.14">8.14</a>、図<a data-knowl="./knowl/fig-autopoiesis-closed.html" title="図 8.15">8.15</a>に、閉鎖性によるオートポイエーシスの違いを示す。 外部の影響を受ける開放系(図<a data-knowl="./knowl/fig-autopoiesis-open.html" title="図 8.13">8.13</a>)では、外部の変化によりシステムの状態が変化し、次の状態が決まる。 半閉鎖系(図<a data-knowl="./knowl/fig-autopoiesis-semiclosed.html" title="図 8.14">8.14</a>)では、外部が変化しても直接影響を受けることはないが、システム内部から外部の変化を観察することで外部の影響を受け、次の状態が変化することがありうる。 閉鎖系(図<a data-knowl="./knowl/fig-autopoiesis-closed.html" title="図 8.15">8.15</a>)は外部から影響を受けないため、外部で生じた変化の影響を受けてシステム内部の状態が変化することはない。</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:9.166666666666666%;margin-right:9.166666666666666%;">
+<div class="sbspanel" style="width:18.3673469387755%;justify-content:flex-start;"><figure class="figure-like" id="fig-autopoiesis-open"><img src="image/system-autopoiesis-open.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">図</span> <span class="codenumber">8.13.</span> 開放系</figcaption></figure></div>
+<div class="sbspanel" style="width:18.3673469387755%;justify-content:flex-start;"><figure class="figure-like" id="fig-autopoiesis-semiclosed"><img src="image/system-autopoiesis-semiclosed.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">図</span> <span class="codenumber">8.14.</span> 半閉鎖系</figcaption></figure></div>
+<div class="sbspanel" style="width:18.3673469387755%;justify-content:flex-start;"><figure class="figure-like" id="fig-autopoiesis-closed"><img src="image/system-autopoiesis-closed.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">図</span> <span class="codenumber">8.15.</span> 閉鎖系</figcaption></figure></div>
+</div></div></section></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.11/login.js"></script>
+</body>
+</html>
