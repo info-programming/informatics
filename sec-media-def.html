@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-10-07T21:27:35+09:00    *-->
+<!--*    on 2020-03-22T23:08:37+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -59,7 +59,7 @@ var js_version = 0.11;
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\require{newunicodechar}\unimathsetup{math-style=ISO,bold-style=ISO}
-\setmathfont{xits-math.otf}
+\setmathfont{XITSMath-Regular.otf}
 \usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
 \setmonofont{Noto Sans Mono CJK JP}
 \setmainfont[ BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
@@ -141,6 +141,7 @@ var js_version = 0.11;
 <li><a href="sec-comm-model.html" data-scroll="sec-comm-model">コミュニケーション・モデル</a></li>
 <li><a href="sec-comm-step.html" data-scroll="sec-comm-step">コミュニケーションの段階</a></li>
 <li><a href="sec-comm-cont.html" data-scroll="sec-comm-cont">コミュニケーションの継続と断絶</a></li>
+<li><a href="sec-comm-bitrate.html" data-scroll="sec-comm-bitrate">コミュニケーションにおける転送効率</a></li>
 </ul>
 </li>
 <li class="link">
@@ -212,8 +213,12 @@ var js_version = 0.11;
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-media-def"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.2</span> <span class="title">メディアの定義</span>
 </h2>
-<a href="sec-media-def.html" class="permalink">¶</a><p id="p-87">メディアは元々、「中間」を意味する語「medium」の複数形であり、「2つのものの<em class="emphasis">間に入る</em>もの」を意味する。 情報学でのメディアはテレビや新聞などのいわゆるマスメディアだけでなく、複数人がコミュニケーションする際に、コミュニケーションの成立を補助するものである。 従って、<dfn class="terminology">メディア</dfn>は<em class="emphasis">コミュニケーションにおいて情報を媒介するもの</em>と定義される。</p>
-<p id="p-88">メディアというと書籍や放送、音楽などが想起されるが、より一般的なメディアも考えうる。 Luhmannは、メディアを“起こりそうにないコミュニケーションを起こりそうなコミュニケーションに変換することに関与するメカニズム”だという<a data-knowl="./knowl/bib-borch.html" title="Bibliographic Entry 21: ニクラス・ルーマン入門――社会システム理論とは何か">[21]</a>。 これをより簡潔に言えば、「コミュニケーションを秩序づけるもの」がメディアである。</p></section></div></main>
+<a href="sec-media-def.html" class="permalink">¶</a><p id="p-90">メディアは元々、「中間」を意味する語「medium」の複数形であり、「2つのものの<em class="emphasis">間に入る</em>もの」を意味する。 情報学でのメディアはテレビや新聞などのいわゆるマスメディアだけでなく、複数人がコミュニケーションする際に、コミュニケーションの成立を補助するものである。 従って、<dfn class="terminology">メディア</dfn>は<em class="emphasis">コミュニケーションにおいて情報を媒介するもの</em>と定義される。</p>
+<p id="p-91">メディアというと書籍や放送、音楽などが想起されるが、より一般的なメディアも考えうる。 Luhmannは、メディアを“起こりそうにないコミュニケーションを起こりそうなコミュニケーションに変換することに関与するメカニズム”だという<a data-knowl="./knowl/bib-borch.html" title="Bibliographic Entry 21: ニクラス・ルーマン入門――社会システム理論とは何か">[21]</a>。 これをより簡潔に言えば、「コミュニケーションを秩序づけるもの」がメディアである。</p>
+<p id="p-92">メディアは、送り手と受け手の間で共有される情報の集合として定義できる。</p>
+<article class="definition-like" id="definition-9"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">5.1</span>. <span class="title">メディア.</span>
+</h6>情報の集合\(M = \{ I | I: \text{情報} \}\)を、<dfn class="terminology">メディア</dfn>(<dfn class="terminology">media</dfn>)という。</article></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
 <script src="https://pretextbook.org/js/0.11/login.js"></script>

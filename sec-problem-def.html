@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-10-07T21:27:35+09:00    *-->
+<!--*    on 2020-03-22T23:08:37+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -59,7 +59,7 @@ var js_version = 0.11;
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\require{newunicodechar}\unimathsetup{math-style=ISO,bold-style=ISO}
-\setmathfont{xits-math.otf}
+\setmathfont{XITSMath-Regular.otf}
 \usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
 \setmonofont{Noto Sans Mono CJK JP}
 \setmainfont[ BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
@@ -141,6 +141,7 @@ var js_version = 0.11;
 <li><a href="sec-comm-model.html" data-scroll="sec-comm-model">コミュニケーション・モデル</a></li>
 <li><a href="sec-comm-step.html" data-scroll="sec-comm-step">コミュニケーションの段階</a></li>
 <li><a href="sec-comm-cont.html" data-scroll="sec-comm-cont">コミュニケーションの継続と断絶</a></li>
+<li><a href="sec-comm-bitrate.html" data-scroll="sec-comm-bitrate">コミュニケーションにおける転送効率</a></li>
 </ul>
 </li>
 <li class="link">
@@ -212,21 +213,21 @@ var js_version = 0.11;
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-problem-def"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">6.2</span> <span class="title">問題の定義</span>
 </h2>
-<a href="sec-problem-def.html" class="permalink">¶</a><p id="p-113">ここでは、Simon<a data-knowl="./knowl/bib-simon2.html" title="Bibliographic Entry 38: システムの科学">[38]</a>による問題の定義を示し、図<a data-knowl="./knowl/fig-problem.html" title="図 6.2">6.2</a>に、問題とその解の関係を示す。</p>
-<article class="definition-like" id="definition-6"><h6 class="heading">
+<a href="sec-problem-def.html" class="permalink">¶</a><p id="p-121">ここでは、Simon<a data-knowl="./knowl/bib-simon2.html" title="Bibliographic Entry 39: システムの科学">[39]</a>による問題の定義を示し、図<a data-knowl="./knowl/fig-problem.html" title="図 6.2">6.2</a>に、問題とその解の関係を示す。</p>
+<article class="definition-like" id="definition-11"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">6.1</span>. <span class="title">問題.</span>
 </h6>
-<dfn class="terminology">目標とする状態</dfn>(<dfn class="terminology">To-Be</dfn>)と<dfn class="terminology">現在の状態</dfn>(<dfn class="terminology">As-Is</dfn>)の間に<em class="emphasis">差</em>があるとき、この差を<dfn class="terminology">問題</dfn>(<dfn class="terminology">problem</dfn>)という<a data-knowl="./knowl/bib-simon2.html" title="Bibliographic Entry 38: システムの科学">[38]</a>。 <em class="emphasis">現在の状態から目標とする状態に至る方法を見つける</em>ことを<dfn class="terminology">問題解決</dfn>(<dfn class="terminology">problem solving</dfn>)といい、この方法をその問題の<dfn class="terminology">解</dfn>(<dfn class="terminology">solution</dfn>)という<a data-knowl="./knowl/bib-newell.html" title="Bibliographic Entry 39: Elements of a Theory of Human Problem Solving">[39]</a>。</article><figure class="figure-like" id="fig-problem"><div style="width: 25%; margin-left: 37.5%; margin-right: 37.5%;"><img src="image/problem.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">図</span> <span class="codenumber">6.2.</span> 問題の定義</figcaption></figure><p id="p-114">問題に対する解は一つしか存在しないとは限らず、複数存在することもある。 そのうち一つでも解を発見できれば問題解決は達成されるが、簡単に見つかる解は実行に非常に長い時間を要したり、膨大な資本が必要となったり、実現が困難であることが多い。 多数ある解のうち、より効果的で実現できる解を見つけることが重要となる。</p>
-<p id="p-115">一般的な問題解決は、次の手順で行われる。 但し、常にこの順番で進むわけではなく、各段階において、前段階で行う内容が不十分だと分かった場合には、必要に応じて1つ以上前の段階に戻ることがある。</p>
+<dfn class="terminology">目標とする状態</dfn>(<dfn class="terminology">To-Be</dfn>)と<dfn class="terminology">現在の状態</dfn>(<dfn class="terminology">As-Is</dfn>)の間に<em class="emphasis">差</em>があるとき、この差を<dfn class="terminology">問題</dfn>(<dfn class="terminology">problem</dfn>)という<a data-knowl="./knowl/bib-simon2.html" title="Bibliographic Entry 39: システムの科学">[39]</a>。 <em class="emphasis">現在の状態から目標とする状態に至る方法を見つける</em>ことを<dfn class="terminology">問題解決</dfn>(<dfn class="terminology">problem solving</dfn>)といい、この方法をその問題の<dfn class="terminology">解</dfn>(<dfn class="terminology">solution</dfn>)という<a data-knowl="./knowl/bib-newell.html" title="Bibliographic Entry 40: Elements of a Theory of Human Problem Solving">[40]</a>。</article><figure class="figure-like" id="fig-problem"><div style="width: 25%; margin-left: 37.5%; margin-right: 37.5%;"><img src="image/problem.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">図</span> <span class="codenumber">6.2.</span> 問題の定義</figcaption></figure><p id="p-122">問題に対する解は一つしか存在しないとは限らず、複数存在することもある。 そのうち一つでも解を発見できれば問題解決は達成されるが、簡単に見つかる解は実行に非常に長い時間を要したり、膨大な資本が必要となったり、実現が困難であることが多い。 多数ある解のうち、より効果的で実現できる解を見つけることが重要となる。</p>
+<p id="p-123">一般的な問題解決は、次の手順で行われる。 但し、常にこの順番で進むわけではなく、各段階において、前段階で行う内容が不十分だと分かった場合には、必要に応じて1つ以上前の段階に戻ることがある。</p>
 <ol class="decimal">
-<li id="li-36">
-<dfn class="terminology">問題定義</dfn>(<dfn class="terminology">problem definition</dfn>): 対象とする問題の<em class="emphasis">目標とする状態</em>と<em class="emphasis">現在の状態</em>を明確かつ簡潔に示す。</li>
-<li id="li-37">
-<dfn class="terminology">現状の調査</dfn>(<dfn class="terminology">investigation</dfn>): 問題が現在どのような状態になっているかを、具体的に<em class="emphasis">調査</em>する。</li>
 <li id="li-38">
-<dfn class="terminology">構造分析</dfn>(<dfn class="terminology">analysis</dfn>): 問題における諸要素の関連性(<em class="emphasis">構造</em>)を<dfn class="terminology">モデル</dfn>(<dfn class="terminology">model</dfn>)として明示し、目標とする状態と現在の状態に差がある<em class="emphasis">原因</em>を明らかにする。</li>
+<dfn class="terminology">問題定義</dfn>(<dfn class="terminology">problem definition</dfn>): 対象とする問題の<em class="emphasis">目標とする状態</em>と<em class="emphasis">現在の状態</em>を明確かつ簡潔に示す。</li>
 <li id="li-39">
+<dfn class="terminology">現状の調査</dfn>(<dfn class="terminology">investigation</dfn>): 問題が現在どのような状態になっているかを、具体的に<em class="emphasis">調査</em>する。</li>
+<li id="li-40">
+<dfn class="terminology">構造分析</dfn>(<dfn class="terminology">analysis</dfn>): 問題における諸要素の関連性(<em class="emphasis">構造</em>)を<dfn class="terminology">モデル</dfn>(<dfn class="terminology">model</dfn>)として明示し、目標とする状態と現在の状態に差がある<em class="emphasis">原因</em>を明らかにする。</li>
+<li id="li-41">
 <dfn class="terminology">解の提案</dfn>(<dfn class="terminology">proposal</dfn>): 明らかになった問題の原因を取り除く<em class="emphasis">アイデア</em>を<em class="emphasis">提案</em>する。</li>
 </ol></section></div></main>
 </div>

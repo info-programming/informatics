@@ -2,7 +2,7 @@
 <html lang="ja-JP">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-10-07T21:27:36+09:00    *-->
+<!--*    on 2020-03-22T23:08:39+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,21 @@
 </head>
 <body>
 <article class="definition-like"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">8.18</span>. <span class="title">システムの準分解.</span>
-</h6>システム\(S = (V, E)\)の隣接行列を\(\epsilon = \{e_{ij} \}\)と定義する。 ここで\(e_{ij}\)は、関係\((v_i, v_j)\)の強さを表す非負の実数である。 あるしきい値\(\tau\)をとり、「\(e_{ij} \leq \tau\)なら\(e_{ij} = 0\)」とみなすことで\(S\)を\(S_1, \cdots, S_n\)に分割できるとする。 このとき、システム\(S\)はしきい値\(\tau\)で\(S_1, \cdots, S_n\)に<dfn class="terminology">準分解可能</dfn>(<dfn class="terminology">nearly decomposable</dfn>)だといい、\(S = S_1 \sqcup \cdots \sqcup S_n\)と表す。 また、\(S_1, \cdots, S_n\)を\(S\)の<dfn class="terminology">部分システム</dfn>(<dfn class="terminology">subsystem</dfn>)といい、\(S_i \subset S\)と表す。</article><span class="incontext"><a href="sec-sys-decompose.html#definition-16">in-context</a></span>
+<span class="type">定義</span> <span class="codenumber">8.2</span>. <span class="title">隣接行列.</span>
+</h6>集合\(V = \{ v_i | i = 1, \cdots, n \}\)の2つの要素\(v_i, v_j\)間に関係がある、つまり\((v_i, v_j) \in E\)のとき\(e_{ij} = 1\)とし、それ以外のとき\(e_{ij} = 0\)とする。 このとき、\(e_{ij}\)を次のように並べた行列\(\varepsilon = (e_{ij})\)を、集合\(V\)の<dfn class="terminology">隣接行列</dfn>という。<div class="displaymath">
+\begin{equation*}
+\varepsilon = (e_{ij})
+= \begin{pmatrix}
+e_{11} \amp e_{12} \amp \cdots \amp e_{1n} \\
+e_{21} \amp e_{22} \amp \cdots \amp e_{2n} \\
+\vdots           \amp \vdots           \amp \ddots \amp \vdots \\
+e_{n1} \amp e_{n2} \amp \cdots \amp e_{nn} \\
+\end{pmatrix} \ 
+\left( e_{ij} = \begin{cases}
+1 \amp ((v_i, v_j) \in E) \\
+0 \amp ((v_i, v_j) \notin E) \\
+\end{cases} \right)
+\end{equation*}
+</div>より一般的に、\(e_{ij}\)の値を非負の実数とすることもある。このとき、\(e_{ij}\)は関係\((v_i, v_j)\)の大きさや強さ、広さなどを表すことができるので、\((v_i, v_j)\)の<dfn class="terminology">容量</dfn>(<dfn class="terminology">capacity</dfn>)という。</article><span class="incontext"><a href="sec-sys-bg.html#definition-16">in-context</a></span>
 </body>
 </html>

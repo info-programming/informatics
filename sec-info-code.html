@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-10-07T21:27:35+09:00    *-->
+<!--*    on 2020-03-22T23:08:37+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -59,7 +59,7 @@ var js_version = 0.11;
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\require{newunicodechar}\unimathsetup{math-style=ISO,bold-style=ISO}
-\setmathfont{xits-math.otf}
+\setmathfont{XITSMath-Regular.otf}
 \usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
 \setmonofont{Noto Sans Mono CJK JP}
 \setmainfont[ BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
@@ -141,6 +141,7 @@ var js_version = 0.11;
 <li><a href="sec-comm-model.html" data-scroll="sec-comm-model">コミュニケーション・モデル</a></li>
 <li><a href="sec-comm-step.html" data-scroll="sec-comm-step">コミュニケーションの段階</a></li>
 <li><a href="sec-comm-cont.html" data-scroll="sec-comm-cont">コミュニケーションの継続と断絶</a></li>
+<li><a href="sec-comm-bitrate.html" data-scroll="sec-comm-bitrate">コミュニケーションにおける転送効率</a></li>
 </ul>
 </li>
 <li class="link">
@@ -212,16 +213,16 @@ var js_version = 0.11;
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-info-code"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">3.6</span> <span class="title">通信における符号</span>
 </h2>
-<a href="sec-info-code.html" class="permalink">¶</a><p id="p-57">コンピュータなどの機械で通信する際に行う符号の例を、次に挙げる。</p>
+<a href="sec-info-code.html" class="permalink">¶</a><p id="p-56">コンピュータなどの機械で通信する際に行う符号の例を、次に挙げる。</p>
 <ul class="disc">
 <li id="li-17">
 <dfn class="terminology">データ圧縮</dfn>(<dfn class="terminology">data compression</dfn>)(情報源符号化)は、データを通信で送受信する際に、通信時間や記憶容量を節約するために行う、データのサイズを小さくする方法である。 データ圧縮における符号化を<dfn class="terminology">圧縮</dfn>(<dfn class="terminology">compress</dfn>)、データ圧縮における復号を<dfn class="terminology">展開</dfn>(<dfn class="terminology">decompress, expand</dfn>)という。 データ圧縮には、圧縮したファイルを圧縮前のファイルと同じファイルに戻すことができる<dfn class="terminology">可逆圧縮</dfn>と、圧縮前のファイルに戻すことができない<dfn class="terminology">非可逆圧縮</dfn>の2種類がある。 文書やソフトウェアを圧縮する場合には、圧縮後に元のファイルを復元できないと困るので、可逆圧縮が使われる。 一方、写真や音楽、動画などは可逆圧縮では小さくなりにくいため、元の品質を犠牲にして情報量を小さくする非可逆圧縮が使われることが多い。 データ圧縮により情報から<em class="emphasis">冗長性を除く</em>と、情報量が減り、より<em class="emphasis">高速</em>に情報を伝えることができる。</li>
 <li id="li-18">
 <dfn class="terminology">誤り検出・訂正</dfn>(<dfn class="terminology">error detection/correction</dfn>)(通信路符号化)は、データを通信で送受信する際に、データを破損させずに送受信するために行う、データの一部を重複させる方法である。 受信したデータの破損を検出することを<dfn class="terminology">誤り検出</dfn>、検出した破損を修正して元のデータを復元することを<dfn class="terminology">誤り訂正</dfn>という。 誤り検出・訂正により情報に<em class="emphasis">冗長性を加える</em>と、情報量が増える一方、より<em class="emphasis">確実</em>に情報を伝えることができる。</li>
 <li id="li-19">
-<dfn class="terminology">暗号</dfn>(<dfn class="terminology">cipher</dfn>)は、パスワードなどの<dfn class="terminology">鍵</dfn>(<dfn class="terminology">key</dfn>)をもつ相手だけに元のメッセージ(<dfn class="terminology">平文</dfn>)を読めるようにし、それ以外の第三者には意味が分からない形に変換する方法である。 暗号における符号化は、<em class="emphasis">社会情報を強制的に機械情報にする変換</em>であり、これを<dfn class="terminology">暗号化</dfn>(<dfn class="terminology">encrypt</dfn>)という。暗号化してできた機械情報を<dfn class="terminology">暗号</dfn>(<dfn class="terminology">cipher</dfn>)または<dfn class="terminology">暗号文</dfn>という。 また、<em class="emphasis">暗号文を平文に戻す変換</em>を<dfn class="terminology">復号</dfn>(<dfn class="terminology">decrypt</dfn>)という。 暗号化や復号の際は、変換に使うパスワードなどの<dfn class="terminology">鍵</dfn>(<dfn class="terminology">key</dfn>)が必要であり、暗号化と復号で<em class="emphasis">同じ鍵</em>を使う暗号を<dfn class="terminology">共通鍵暗号</dfn>、<em class="emphasis">異なる鍵</em>を使う暗号を<dfn class="terminology">公開鍵暗号</dfn>という。 共通鍵暗号と公開鍵暗号の仕組みを図<a data-knowl="./knowl/fig-cipher-common.html" title="図 3.12">3.12</a>と図<a data-knowl="./knowl/fig-cipher-public.html" title="図 3.13">3.13</a>に示す。 <div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
-<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-end;"><figure class="figure-like" id="fig-cipher-common"><img src="image/cipher-common.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">図</span> <span class="codenumber">3.12.</span> 共通鍵暗号の仕組み</figcaption></figure></div>
-<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-end;"><figure class="figure-like" id="fig-cipher-public"><img src="image/cipher-public.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">図</span> <span class="codenumber">3.13.</span> 公開鍵暗号の仕組み</figcaption></figure></div>
+<dfn class="terminology">暗号</dfn>(<dfn class="terminology">cipher</dfn>)は、パスワードなどの<dfn class="terminology">鍵</dfn>(<dfn class="terminology">key</dfn>)をもつ相手だけに元のメッセージ(<dfn class="terminology">平文</dfn>)を読めるようにし、それ以外の第三者には意味が分からない形に変換する方法である。 暗号における符号化は、<em class="emphasis">社会情報を強制的に機械情報にする変換</em>であり、これを<dfn class="terminology">暗号化</dfn>(<dfn class="terminology">encrypt</dfn>)という。暗号化してできた機械情報を<dfn class="terminology">暗号</dfn>(<dfn class="terminology">cipher</dfn>)または<dfn class="terminology">暗号文</dfn>という。 また、<em class="emphasis">暗号文を平文に戻す変換</em>を<dfn class="terminology">復号</dfn>(<dfn class="terminology">decrypt</dfn>)という。 暗号化や復号の際は、変換に使うパスワードなどの<dfn class="terminology">鍵</dfn>(<dfn class="terminology">key</dfn>)が必要であり、暗号化と復号で<em class="emphasis">同じ鍵</em>を使う暗号を<dfn class="terminology">共通鍵暗号</dfn>、<em class="emphasis">異なる鍵</em>を使う暗号を<dfn class="terminology">公開鍵暗号</dfn>という。 共通鍵暗号と公開鍵暗号の仕組みを図<a data-knowl="./knowl/fig-cipher-common.html" title="図 3.14">3.14</a>と図<a data-knowl="./knowl/fig-cipher-public.html" title="図 3.15">3.15</a>に示す。 <div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-end;"><figure class="figure-like" id="fig-cipher-common"><img src="image/cipher-common.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">図</span> <span class="codenumber">3.14.</span> 共通鍵暗号の仕組み</figcaption></figure></div>
+<div class="sbspanel" style="width:44.4444444444444%;justify-content:flex-end;"><figure class="figure-like" id="fig-cipher-public"><img src="image/cipher-public.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">図</span> <span class="codenumber">3.15.</span> 公開鍵暗号の仕組み</figcaption></figure></div>
 </div></div>
 </li>
 </ul></section></div></main>
