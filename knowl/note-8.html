@@ -2,7 +2,7 @@
 <html lang="ja-JP">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-09-19T12:07:16+09:00    *-->
+<!--*    on 2020-09-19T17:21:18+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,9 +13,10 @@
 </head>
 <body>
 <article class="remark-like"><h6 class="heading">
-<span class="type">注釈</span> <span class="codenumber">8.6</span>. <span class="title">実体関連モデルと関係データベース.</span>
+<span class="type">注釈</span> <span class="codenumber">8.4</span>. <span class="title">グラフ.</span>
 </h6>
-<p>コンピュータで情報をデータとして蓄積し、利用できるようにしたものを<dfn class="terminology">データベース</dfn>(<dfn class="terminology">database</dfn>)(<dfn class="terminology">DB</dfn>)といい、データベースを管理するためのシステムを<dfn class="terminology">データベース管理システム</dfn>(<dfn class="terminology">database management system</dfn>)(<dfn class="terminology">DBMS</dfn>)という。 DBMSは、DBの情報の追加・削除を行うことや、DBから情報を検索し読み出すことができる。</p>
-<p>現在広く使われるDBの多くが、Codd<a data-knowl="./knowl/bib-codd.html" title="Bibliographic Entry 62: A relational model of data for large shared data banks">[62]</a>の提案に基づく<dfn class="terminology">関係データベース</dfn>(<dfn class="terminology">relational database</dfn>)と呼ばれる種類のDBである。 関係データベースの設計には、Chenによる<dfn class="terminology">実体関連モデル</dfn>(<dfn class="terminology">Entity-Relationship model</dfn>)(<dfn class="terminology">ERモデル</dfn>)<a data-knowl="./knowl/bib-chen-er.html" title="Bibliographic Entry 63: The Entity-Relationship Model-Toward a Unified View of Data">[63]</a>と呼ばれるモデルが使われる。 ERモデルでは、DBの作成対象を<dfn class="terminology">実体</dfn>(<dfn class="terminology">entity</dfn>)と、実体間の<dfn class="terminology">関連</dfn>(<dfn class="terminology">relationship</dfn>)と捉え、DBを作成する。 実体はシステムの要素に、関連はシステムの構造に対応しており、DBは現実のシステムをデータ化して機械的に処理するためのものだといえる。</p></article><span class="incontext"><a href="sec-sys-def.html#note-8">in-context</a></span>
+<p>システムのように、点と、2点を結ぶ線の組を<dfn class="terminology">グラフ</dfn>(<dfn class="terminology">graph</dfn>)という。 グラフでは、「点」を<dfn class="terminology">節点</dfn>(<dfn class="terminology">node</dfn>)や頂点、「線」を<dfn class="terminology">枝</dfn>(<dfn class="terminology">edge</dfn>)や辺という。 数学の関数\(y = f(x)\)の概形を表す「グラフ」や、理科の実験で測定値に対応する点を繋いだ「グラフ」も、その関数が通る「点」を「線」で結んで表したものなので、ここでいうグラフの一種である。</p>
+<p>グラフは節点と枝のみからなるため、節点の集合を\(V\)、枝の集合を\(E\)とすれば、グラフは\((V, E)\)と表せる。 グラフのうち、枝の2つの端点が区別できず、枝に「向き」がないグラフを<dfn class="terminology">無向グラフ</dfn>(<dfn class="terminology">undirected graph</dfn>)という。 一方、すべての枝に「向き」があるグラフを<dfn class="terminology">有向グラフ</dfn>(<dfn class="terminology">directed graph</dfn>)という。</p>
+<p>以上のようなグラフに関する理論はグラフ理論と呼ばれ、ネットワークや送電網の分析など、工学の各方面で応用される。</p></article><span class="incontext"><a href="sec-sys-def.html#note-8">in-context</a></span>
 </body>
 </html>

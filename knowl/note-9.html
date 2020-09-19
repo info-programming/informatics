@@ -2,7 +2,7 @@
 <html lang="ja-JP">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-09-19T12:07:16+09:00    *-->
+<!--*    on 2020-09-19T17:21:18+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,15 +13,9 @@
 </head>
 <body>
 <article class="remark-like"><h6 class="heading">
-<span class="type">注釈</span> <span class="codenumber">8.10</span>. <span class="title">力学系.</span>
+<span class="type">注釈</span> <span class="codenumber">8.6</span>. <span class="title">実体関連モデルと関係データベース.</span>
 </h6>
-<p>システムにおける動的な構造の変化を強調して、システムを<dfn class="terminology">力学系</dfn>(<dfn class="terminology">dynamical system</dfn>)や<dfn class="terminology">複雑系</dfn>(<dfn class="terminology">complex system</dfn>)ということがある。 この「力学」はdynamicalの訳語であり、物理における「力学」との直接的な関係はない。</p>
-<p>力学系では、状態を\(n\)個の変数\(x_1, \cdots, x_n\)で表せると仮定する。 状態の変化を\(n\)個の関数\(f_1, \cdots, f_n\)で表せるとしたとき、力学系は次の\(n\)個の微分方程式で表される。</p>
-<div class="displaymath">
-\begin{equation*}
-\frac{d}{dt} x_i = f_i(x_1, \cdots, x_n, t) (i = 1, \cdots, n)
-\end{equation*}
-</div>
-<p>力学系は、初期状態の微小な差が系全体の挙動に影響するバタフライ効果など、カオス理論の基礎になっている。</p></article><span class="incontext"><a href="sec-sys-dynamic.html#note-9">in-context</a></span>
+<p>コンピュータで情報をデータとして蓄積し、利用できるようにしたものを<dfn class="terminology">データベース</dfn>(<dfn class="terminology">database</dfn>)(<dfn class="terminology">DB</dfn>)といい、データベースを管理するためのシステムを<dfn class="terminology">データベース管理システム</dfn>(<dfn class="terminology">database management system</dfn>)(<dfn class="terminology">DBMS</dfn>)という。 DBMSは、DBの情報の追加・削除を行うことや、DBから情報を検索し読み出すことができる。</p>
+<p>現在広く使われるDBの多くが、Codd<a data-knowl="./knowl/bib-codd.html" title="Bibliographic Entry 62: A relational model of data for large shared data banks">[62]</a>の提案に基づく<dfn class="terminology">関係データベース</dfn>(<dfn class="terminology">relational database</dfn>)と呼ばれる種類のDBである。 関係データベースの設計には、Chenによる<dfn class="terminology">実体関連モデル</dfn>(<dfn class="terminology">Entity-Relationship model</dfn>)(<dfn class="terminology">ERモデル</dfn>)<a data-knowl="./knowl/bib-chen-er.html" title="Bibliographic Entry 63: The Entity-Relationship Model-Toward a Unified View of Data">[63]</a>と呼ばれるモデルが使われる。 ERモデルでは、DBの作成対象を<dfn class="terminology">実体</dfn>(<dfn class="terminology">entity</dfn>)と、実体間の<dfn class="terminology">関連</dfn>(<dfn class="terminology">relationship</dfn>)と捉え、DBを作成する。 実体はシステムの要素に、関連はシステムの構造に対応しており、DBは現実のシステムをデータ化して機械的に処理するためのものだといえる。</p></article><span class="incontext"><a href="sec-sys-def.html#note-9">in-context</a></span>
 </body>
 </html>
