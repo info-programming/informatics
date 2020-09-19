@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-09-18T08:00:23+09:00    *-->
+<!--*    on 2020-09-19T12:07:13+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -213,10 +213,10 @@ var js_version = 0.11;
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-info-entropy"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">3.5</span> <span class="title">情報の「量」</span>
 </h2>
-<a href="sec-info-entropy.html" class="permalink">¶</a><p id="p-52"><a href="sec-sem-semiotics.html" class="internal" title="Section 2.1: 表現と内容">2.1</a>節で述べたように、内容の「大きさ」は客観的に測ることができないため、内容を含む生命情報や社会情報の「大きさ」を測ることはできない。 一方、表現の大きさは客観的に測ることができるので、機械情報については「量」を測ることができる。 機械情報の量を<dfn class="terminology">情報量</dfn>と呼ぶが、これはあくまで<em class="emphasis">表現の数であり、内容がもたらす価値とは異なる</em>ことに注意が必要である。</p>
+<a href="sec-info-entropy.html" class="permalink">¶</a><p id="p-53"><a href="sec-sem-semiotics.html" class="internal" title="Section 2.1: 表現と内容">2.1</a>節で述べたように、内容の「大きさ」は客観的に測ることができないため、内容を含む生命情報や社会情報の「大きさ」を測ることはできない。 一方、表現の大きさは客観的に測ることができるので、機械情報については「量」を測ることができる。 機械情報の量を<dfn class="terminology">情報量</dfn>と呼ぶが、これはあくまで<em class="emphasis">表現の数であり、内容がもたらす価値とは異なる</em>ことに注意が必要である。</p>
 <article class="definition-like" id="definition-4"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">3.12</span>. <span class="title">情報量.</span>
-</h6>機械情報\((\alpha, \varepsilon)\)について、表現\(\alpha\)の数を機械情報\((\alpha, \varepsilon)\)の<dfn class="terminology">情報量</dfn>という。</article><p id="p-53">情報量を数値で表すため、Shannonは、0と1の2つの文字で表せる2進数で1桁となる数を、<dfn class="terminology">bit</dfn>という単位で定義した<a data-knowl="./knowl/bib-shannon.html" title="Bibliographic Entry 28: A Mathematical Theory of Communication">[28]</a>。 例えば、0や1は\(1 \mathrm{bit}\)で表せるが、2進数には「2」という数字はないので、このままでは「2」を表すことができない。 そこで、2は10(いちぜろ)、3は11(いちいち)と数字2つ(\(2 \mathrm{bits}\))を使って表す。 同様に、4は100、5は101のように\(3 \mathrm{bits}\)で表される。</p>
+</h6>機械情報\((\alpha, \varepsilon)\)について、表現\(\alpha\)の数を機械情報\((\alpha, \varepsilon)\)の<dfn class="terminology">情報量</dfn>という。</article><p id="p-54">情報量を数値で表すため、Shannonは、0と1の2つの文字で表せる2進数で1桁となる数を、<dfn class="terminology">bit</dfn>という単位で定義した<a data-knowl="./knowl/bib-shannon.html" title="Bibliographic Entry 29: A Mathematical Theory of Communication">[29]</a>。 例えば、0や1は\(1 \mathrm{bit}\)で表せるが、2進数には「2」という数字はないので、このままでは「2」を表すことができない。 そこで、2は10(いちぜろ)、3は11(いちいち)と数字2つ(\(2 \mathrm{bits}\))を使って表す。 同様に、4は100、5は101のように\(3 \mathrm{bits}\)で表される。</p>
 <article class="definition-like" id="definition-5"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">3.13</span>. <span class="title">情報量の単位.</span>
 </h6>機械情報\((\alpha, \varepsilon)\)の表現\(\alpha\)が\(n\)個の2進数で表されるとき、単位<dfn class="terminology">bit</dfn>を用いて、機械情報\((\alpha, \varepsilon)\)の情報量は\(n \mathrm{bits}\)であるという。 対数関数\(\mathrm{log}\)を用いると、次のように表せる。<div class="displaymath">
@@ -227,8 +227,8 @@ n = \log_2 \alpha
 \begin{equation*}
 1 \mathrm{KB} = 1,024 \mathrm{B}, 1 \mathrm{MB} = 1,024 \mathrm{KB}, 1 \mathrm{GB} = 1,024 \mathrm{MB}, 1 \mathrm{TB} = 1,024 \mathrm{GB}
 \end{equation*}
-</div></article><p id="p-54">文字のみの文章なら数KBから数百KB程度、写真や音楽なら数MBから数十MB程度、動画なら数百MBから数十GB程度の大きさが一般的である。 ファイルの記録に使うUSBフラッシュメモリやmicroSDカード、Blu-ray Discなどに記録できる容量はいずれも数十GBから数百GB程度、ハードディスク(HDD)の記憶容量は数百GBから数TBのものが多い。 携帯電話の通信制限は、ひと月あたり数GBが一般的である。</p>
-<p id="p-55">Shannonは情報理論の創始者<a data-knowl="./knowl/bib-shannon.html" title="Bibliographic Entry 28: A Mathematical Theory of Communication">[28]</a>だが、その主要な業績は情報の冗長性に関するものである。 ここでいう<dfn class="terminology">冗長性</dfn>は、必要最低限の表現に加えて、<em class="emphasis">余分や重複</em>がある状態を指す。 冗長な部分は不要と考えられることも多いが、冗長性を削ったデータを正しく送れなかった場合は再度データを送る必要があり、結果的に多くのデータを送らなくてはならないこともある。 速度と確実さのバランスを取り、全体的に見て効率的な情報伝達を目指すことが重要である。</p></section></div></main>
+</div></article><p id="p-55">文字のみの文章なら数KBから数百KB程度、写真や音楽なら数MBから数十MB程度、動画なら数百MBから数十GB程度の大きさが一般的である。 ファイルの記録に使うUSBフラッシュメモリやmicroSDカード、Blu-ray Discなどに記録できる容量はいずれも数十GBから数百GB程度、ハードディスク(HDD)の記憶容量は数百GBから数TBのものが多い。 携帯電話の通信制限は、ひと月あたり数GBが一般的である。</p>
+<p id="p-56">Shannonは情報理論の創始者<a data-knowl="./knowl/bib-shannon.html" title="Bibliographic Entry 29: A Mathematical Theory of Communication">[29]</a>だが、その主要な業績は情報の冗長性に関するものである。 ここでいう<dfn class="terminology">冗長性</dfn>は、必要最低限の表現に加えて、<em class="emphasis">余分や重複</em>がある状態を指す。 冗長な部分は不要と考えられることも多いが、冗長性を削ったデータを正しく送れなかった場合は再度データを送る必要があり、結果的に多くのデータを送らなくてはならないこともある。 速度と確実さのバランスを取り、全体的に見て効率的な情報伝達を目指すことが重要である。</p></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
 <script src="https://pretextbook.org/js/0.11/login.js"></script>
