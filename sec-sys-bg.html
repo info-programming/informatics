@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2021-08-16T14:37:55+09:00    *-->
+<!--*    on 2021-08-16T15:38:34+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -159,6 +159,7 @@ var js_version = 0.11;
 <li><a href="sec-problem-bg.html" data-scroll="sec-problem-bg">複雑性と問題</a></li>
 <li><a href="sec-problem-def.html" data-scroll="sec-problem-def">問題の定義</a></li>
 <li><a href="sec-problem-approach.html" data-scroll="sec-problem-approach">問題解決の方針</a></li>
+<li><a href="sec-problem-algorithm.html" data-scroll="sec-problem-algorithm">問題解決の手順</a></li>
 </ul>
 </li>
 <li class="link">
@@ -214,12 +215,12 @@ var js_version = 0.11;
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-sys-bg"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">8.1</span> <span class="title">構造主義</span>
 </h2>
-<a href="sec-sys-bg.html" class="permalink">¶</a><p id="p-160">この世界に存在する対象は、互いに孤立しているわけではなく、互いに関係し、作用して影響を及ぼすことが多い。 物質の化学反応や生命の維持、人間の思考、地域やSNSのコミュニティ、政治や経済は、いずれも要素間の相互作用を考慮しなければ、適切に分析できない。</p>
-<p id="p-161">Lévi-Straussは、要素間の関係を<dfn class="terminology">構造</dfn>(<dfn class="terminology">structure</dfn>)と呼んだ<a data-knowl="./knowl/bib-levi-strauss.html" title="Bibliographic Entry 44: 構造主義再考">[44]</a>。 構造主義では構造を重視し、対象\(A\)を要素とその関係からなるシステムとみなし、関係に注目して分析する。</p>
-<article class="definition-like" id="definition-16"><h6 class="heading">
+<a href="sec-sys-bg.html" class="permalink">¶</a><p id="p-163">この世界に存在する対象は、互いに孤立しているわけではなく、互いに関係し、作用して影響を及ぼすことが多い。 物質の化学反応や生命の維持、人間の思考、地域やSNSのコミュニティ、政治や経済は、いずれも要素間の相互作用を考慮しなければ、適切に分析できない。</p>
+<p id="p-164">Lévi-Straussは、要素間の関係を<dfn class="terminology">構造</dfn>(<dfn class="terminology">structure</dfn>)と呼んだ<a data-knowl="./knowl/bib-levi-strauss.html" title="Bibliographic Entry 45: 構造主義再考">[45]</a>。 構造主義では構造を重視し、対象\(A\)を要素とその関係からなるシステムとみなし、関係に注目して分析する。</p>
+<article class="definition-like" id="definition-18"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">8.1</span>. <span class="title">構造.</span>
-</h6>集合\(V = \{ v_i | i = 1, \cdots, n \}\)の2つの要素\(v_i, v_j\)間に関係があるとき、この関係を2要素の組\((v_i, v_j)\)として表す。 関係の集合\(E = \{ (v_i, v_j) \}\)を、集合\(V\)の<dfn class="terminology">構造</dfn>(<dfn class="terminology">structure</dfn>)という。</article><p id="p-162">構造の表し方には、要素の組として表す以外に、次のように隣接行列を用いる方法もある。</p>
-<article class="definition-like" id="definition-17"><h6 class="heading">
+</h6>集合\(V = \{ v_i | i = 1, \cdots, n \}\)の2つの要素\(v_i, v_j\)間に関係があるとき、この関係を2要素の組\((v_i, v_j)\)として表す。 関係の集合\(E = \{ (v_i, v_j) \}\)を、集合\(V\)の<dfn class="terminology">構造</dfn>(<dfn class="terminology">structure</dfn>)という。</article><p id="p-165">構造の表し方には、要素の組として表す以外に、次のように隣接行列を用いる方法もある。</p>
+<article class="definition-like" id="definition-19"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">8.2</span>. <span class="title">隣接行列.</span>
 </h6>集合\(V = \{ v_i | i = 1, \cdots, n \}\)の2つの要素\(v_i, v_j\)間に関係がある、つまり\((v_i, v_j) \in E\)のとき\(e_{ij} = 1\)とし、それ以外のとき\(e_{ij} = 0\)とする。 このとき、\(e_{ij}\)を次のように並べた行列\(\varepsilon = (e_{ij})\)を、集合\(V\)の<dfn class="terminology">隣接行列</dfn>という。<div class="displaymath">
 \begin{equation*}

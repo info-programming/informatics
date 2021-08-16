@@ -2,7 +2,7 @@
 <html lang="ja-JP">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2021-08-16T14:37:57+09:00    *-->
+<!--*    on 2021-08-16T15:38:36+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,13 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Toulmin(トゥールミン)は、<em class="emphasis">前提</em>、<em class="emphasis">規則</em>、<em class="emphasis">結論</em>という3つの命題が存在し、前提に規則を適用すると結論が得られるとした<a data-knowl="./knowl/bib-toulmin.html" title="Bibliographic Entry 55: 議論の技法">[55]</a>。 この「三角ロジック」と呼ばれる形式に従えば、演繹・帰納・アブダクションの3つの推論法は、図<a data-knowl="./knowl/fig-logic-inference.html" title="図 11.3">11.3</a>のように対比できる。 図中の矢印は命題を表し、「\(A ⇒ B\)」を前提、「\(B ⇒ C\)」を規則、「\(A ⇒ C\)」は結論とする。 また、それぞれの推論法で与えられている命題を実線で、推論により導かれる命題を点線で示す。</p>
-<span class="incontext"><a href="sec-logic-infer.html#p-278">in-context</a></span>
+<p>「すべて」や「ある」を含む命題については、Aristotleの時代から議論されてきた<a data-knowl="./knowl/bib-aristotle-int.html" title="Bibliographic Entry 90: On Interpretation">[90]</a><a data-knowl="./knowl/bib-aristotle-int-j.html" title="Bibliographic Entry 91: 命題論">[91]</a>。 集合\(X\)の<em class="emphasis">すべての</em>(<em class="emphasis">任意の</em>)要素\(x\)について命題\(P_x\)が成り立つことを、全称記号と呼ばれる記号「\(\forall\)」を使って「\(\forall x \in X, P_x\)」と表す。 また、集合\(X\)の<em class="emphasis">ある</em>要素\(x\)について命題\(P_x\)が成り立つ(\(P_x\)が成り立つ\(x\)が<em class="emphasis">存在する</em>)ことを、特称記号と呼ばれる記号「\(\exists\)」を使って「\(\exists x \in X, P_x\)」と表す。 \(\forall, \exists\)はそれぞれ、「<em class="emphasis">A</em>ll」と「<em class="emphasis">E</em>xists」の頭文字を逆さにした記号である。 これらを、前のコラムで使った「\(:=\)」で形式的に定義すると、次のようになる。 なお、\(X = \{x_1, \cdots, x_n\}\)のとき\(\bigwedge_{x \in X} P_x := P_{x_1} \wedge \cdots \wedge P_{x_n}\)とする。</p>
+<div class="displaymath">
+\begin{equation*}
+(\forall x \in X, P_x) := \bigwedge_{x \in X} P_x, \hspace{1em}
+(\exists x \in X, P_x) := \bigvee_{x \in X} P_x
+\end{equation*}
+</div>
+<span class="incontext"><a href="sec-logic-prop.html#p-278">in-context</a></span>
 </body>
 </html>
