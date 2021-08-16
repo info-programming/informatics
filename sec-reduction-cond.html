@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2021-08-16T10:55:23+09:00    *-->
+<!--*    on 2021-08-16T14:10:26+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -124,6 +124,7 @@ var js_version = 0.11;
 <li><a href="sec-sem-semiotics.html" data-scroll="sec-sem-semiotics">表現と内容</a></li>
 <li><a href="sec-sem-code.html" data-scroll="sec-sem-code">符号化と復号</a></li>
 <li><a href="sec-sem-subject.html" data-scroll="sec-sem-subject">主観性</a></li>
+<li><a href="sec-sem-cardinal.html" data-scroll="sec-sem-cardinal">アナログとデジタル</a></li>
 </ul>
 </li>
 <li class="link">
@@ -213,10 +214,10 @@ var js_version = 0.11;
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-reduction-cond"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">7.3</span> <span class="title">還元の条件</span>
 </h2>
-<a href="sec-reduction-cond.html" class="permalink">¶</a><section class="introduction" id="introduction-11"><p id="p-141">還元主義に基づく分析では、複雑な対象をより細かい対象に分割し、元の対象よりも単純な分割後の対象を分析することで、元の対象を理解できる。 一方で、適切な分割を行わなければ、検討すべき対象を見落としたり、重要な部分を見過ごしたりする可能性がある。 そのため、還元による分析の際は、分割が適切かどうかを検討する必要がある。</p></section><section class="subsection" id="ssec-reduction-em"><h3 class="heading hide-type">
+<a href="sec-reduction-cond.html" class="permalink">¶</a><section class="introduction" id="introduction-11"><p id="p-148">還元主義に基づく分析では、複雑な対象をより細かい対象に分割し、元の対象よりも単純な分割後の対象を分析することで、元の対象を理解できる。 一方で、適切な分割を行わなければ、検討すべき対象を見落としたり、重要な部分を見過ごしたりする可能性がある。 そのため、還元による分析の際は、分割が適切かどうかを検討する必要がある。</p></section><section class="subsection" id="ssec-reduction-em"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.3.1</span> <span class="title">還元性</span>
 </h3>
-<a href="sec-reduction-cond.html#ssec-reduction-em" class="permalink">¶</a><p id="p-142">ある集合\(A\)を、部分集合\(A_1, \cdots, A_n (\subset A)\)に分割できるとする。 ある性質について還元主義で分析するためには、まずその性質について、集合\(A\)に還元性があることが必要である。</p>
+<a href="sec-reduction-cond.html#ssec-reduction-em" class="permalink">¶</a><p id="p-149">ある集合\(A\)を、部分集合\(A_1, \cdots, A_n (\subset A)\)に分割できるとする。 ある性質について還元主義で分析するためには、まずその性質について、集合\(A\)に還元性があることが必要である。</p>
 <article class="definition-like" id="definition-14"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">7.2</span>. <span class="title">還元性.</span>
 </h6>集合\(A\)に対して、部分集合\(A_1, \cdots, A_n (\subset A)\)があるとする。 \(A\)や\(A_i\)がもつある性質を数値化する関数を\(m\)とおくとき、 <ul class="disc">
@@ -225,10 +226,10 @@ var js_version = 0.11;
 </ul></article></section><section class="subsection" id="ssec-reduction-mece"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.3.2</span> <span class="title">MECE</span>
 </h3>
-<a href="sec-reduction-cond.html#ssec-reduction-mece" class="permalink">¶</a><p id="p-143">ある性質について還元性のある集合\(A\)は、その性質について集合を分割することができる。 このとき、\(A = A_1 \cup \cdots \cup A_n\)と分割できるが、この分割が適切な分割だとは限らない。 図<a data-knowl="./knowl/fig-system-2d-set-ce.html" title="図 7.3">7.3</a>、図<a data-knowl="./knowl/fig-system-2d-set-me.html" title="図 7.4">7.4</a>、図<a data-knowl="./knowl/fig-system-2d-set-mece.html" title="図 7.5">7.5</a>に、分割で起こりうる可能性を示す。</p>
-<p id="p-144">\(A\)の要素のうち、\(A_1, \cdots, A_n\)に<em class="emphasis">含まれない要素があり、図<a data-knowl="./knowl/fig-system-2d-set-ce.html" title="図 7.3">7.3</a>のように「漏れ」が生じる</em>ことがありうる。 分割に「漏れ」があると、必要な要素を見落として分析することになり、正しい解に到達しない。</p>
-<p id="p-145">また、\(A_1, \cdots, A_n\)に<em class="emphasis">同じ要素を含む集合があり、図<a data-knowl="./knowl/fig-system-2d-set-me.html" title="図 7.4">7.4</a>のように「重複」が生じる</em>ことがありうる。 分割に「重複」があると、必要な要素を複数回分析することになり、効率の良い分析ができない。</p>
-<p id="p-146">以上のような誤りを避けると、図<a data-knowl="./knowl/fig-system-2d-set-mece.html" title="図 7.5">7.5</a>のように\(A\)を<em class="alert">漏れなく(Collectively Exhaustive)重複なく(Mutually Exclusive)分割</em>する\(A_1, \cdots, A_n\)をとることができる。</p>
+<a href="sec-reduction-cond.html#ssec-reduction-mece" class="permalink">¶</a><p id="p-150">ある性質について還元性のある集合\(A\)は、その性質について集合を分割することができる。 このとき、\(A = A_1 \cup \cdots \cup A_n\)と分割できるが、この分割が適切な分割だとは限らない。 図<a data-knowl="./knowl/fig-system-2d-set-ce.html" title="図 7.3">7.3</a>、図<a data-knowl="./knowl/fig-system-2d-set-me.html" title="図 7.4">7.4</a>、図<a data-knowl="./knowl/fig-system-2d-set-mece.html" title="図 7.5">7.5</a>に、分割で起こりうる可能性を示す。</p>
+<p id="p-151">\(A\)の要素のうち、\(A_1, \cdots, A_n\)に<em class="emphasis">含まれない要素があり、図<a data-knowl="./knowl/fig-system-2d-set-ce.html" title="図 7.3">7.3</a>のように「漏れ」が生じる</em>ことがありうる。 分割に「漏れ」があると、必要な要素を見落として分析することになり、正しい解に到達しない。</p>
+<p id="p-152">また、\(A_1, \cdots, A_n\)に<em class="emphasis">同じ要素を含む集合があり、図<a data-knowl="./knowl/fig-system-2d-set-me.html" title="図 7.4">7.4</a>のように「重複」が生じる</em>ことがありうる。 分割に「重複」があると、必要な要素を複数回分析することになり、効率の良い分析ができない。</p>
+<p id="p-153">以上のような誤りを避けると、図<a data-knowl="./knowl/fig-system-2d-set-mece.html" title="図 7.5">7.5</a>のように\(A\)を<em class="alert">漏れなく(Collectively Exhaustive)重複なく(Mutually Exclusive)分割</em>する\(A_1, \cdots, A_n\)をとることができる。</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:4.166666666666667%;margin-right:4.166666666666667%;">
 <div class="sbspanel" style="width:27.2727272727273%;justify-content:flex-start;"><figure class="figure-like" id="fig-system-2d-set-ce"><img src="image/system-2d-set-ce.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">図</span> <span class="codenumber">7.3.</span> 漏れがある場合</figcaption></figure></div>
 <div class="sbspanel" style="width:27.2727272727273%;justify-content:flex-start;"><figure class="figure-like" id="fig-system-2d-set-me"><img src="image/system-2d-set-me.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">図</span> <span class="codenumber">7.4.</span> 重複がある場合</figcaption></figure></div>
@@ -239,7 +240,7 @@ var js_version = 0.11;
 </h6>集合\(A\)に対して、部分集合\(A_1, \cdots, A_n (\subset A)\)があるとする。 このとき、次の2つの条件を満たすならば、\(A_1, \cdots, A_n\)は\(A\)の<dfn class="terminology">MECE</dfn>(<dfn class="terminology">Mutually Exclusive and Collectively Exhaustive</dfn>)な分割、または<dfn class="terminology">直和</dfn>(ちょくわ)であるという。 <ul class="disc">
 <li id="li-47">任意の\(i, j (i \neq j)\)について、\(A_i \cap A_j = \emptyset\)が成り立つ(<em class="emphasis">Mutually Exclusive</em>) (このとき、\(A_1, \cdots, A_n\)は<dfn class="terminology">互いに素</dfn>な集合であるという)</li>
 <li id="li-48">任意の\(a \in A\)について、\(a \in A_i\)となるような\(i (= 1, \cdots, n)\)が存在する(<em class="emphasis">Collectively Exhaustive</em>)</li>
-</ul></article><article class="remark-like" id="note-6"><h6 class="heading">
+</ul></article><article class="remark-like" id="note-7"><h6 class="heading">
 <span class="type">注釈</span> <span class="codenumber">7.7</span>. <span class="title">「互いに素」を表す記法.</span>
 </h6>\(A_i\)と\(A_j\)が互いに素な集合であるとき、\(A_i\)と\(A_j\)の和集合\(A_i \cup A_j\)を、互いに素なことを強調して記号「\(\sqcup\)」を使い、\(A_i \sqcup A_j\)と表すことがある。 同様に、\(A = A_1 \cup \cdots \cup A_n (= \bigcup_{i=1}^n A_i)\)となる分割が直和のとき、\(A = A_1 \sqcup \cdots \sqcup A_n (= \bigsqcup_{i=1}^n A_i)\)と表すことがある。</article></section></section></div></main>
 </div>
