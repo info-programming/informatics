@@ -1,0 +1,24 @@
+@startuml model-sequence
+!include plantuml.puml
+
+== (1) 情報の選択 ==
+
+	Note over Bob: (ε, β)
+
+== (2) 表現の選択 ==
+
+	Note over Bob: (e(β), β)
+	Bob -> Media
+	Note over Media: (e(β), ε)
+	Media -> Alice
+	Note over Alice: (e(β), ε)
+
+== (3) 理解の選択 ==
+
+	Note over Alice: (e(β), d(e(β)))
+
+== (4) 理解を受け入れるか否かの選択 ==
+
+	Note over Alice: (ε, d(e(β)))
+
+@enduml
