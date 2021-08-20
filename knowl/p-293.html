@@ -2,7 +2,7 @@
 <html lang="ja-JP">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2021-08-17T17:44:15+09:00    *-->
+<!--*    on 2021-08-20T09:35:59+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,13 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p><dfn class="terminology">帰納</dfn>(きのう)(<dfn class="terminology">induction</dfn>)は、前提と結論から規則を導く推論である。 図<a data-knowl="./knowl/fig-logic-inference.html" title="図 11.3">11.3</a>の例では、「ソクラテスは人である」「プラトンは人である」「ゼノンは人である」という前提と、「ソクラテスは死ぬ」「プラトンは死ぬ」「ゼノンは死ぬ」という結論が与えられたときに、「人は死ぬ」という<em class="emphasis">規則が真だと推論</em>する<a data-knowl="./knowl/bib-aristotle-ana2.html" title="Bibliographic Entry 97: Prior Analytics">[97]</a><a data-knowl="./knowl/bib-aristotle-ana-j2.html" title="Bibliographic Entry 99: 分析論前書">[99]</a><a data-knowl="./knowl/bib-bacon.html" title="Bibliographic Entry 100: ノヴム・オルガヌム――新機関">[100]</a>。 <em class="emphasis">経験則</em>や<dfn class="terminology">ヒューリスティクス</dfn>(<dfn class="terminology">heuristics</dfn>)は、帰納による推論の例である。</p>
-<span class="incontext"><a href="sec-logic-infer.html#p-293">in-context</a></span>
+<p>この定義を使うと、「すべての\(x\)について\(P_x\)が成り立つ」の否定が「ある\(x\)について\(P_x\)が成り立たない」になることや、「ある\(x\)について\(P_x\)が成り立つ」の否定が「すべての\(x\)について\(P_x\)が成り立たない」になることは、次の式変形で示せる。変形の途中ではde Morganの公式(\(\overline{A \wedge B} = \bar{A} \vee \bar{B}, \overline{A \vee B} = \bar{A} \wedge \bar{B}\))を使っている。</p>
+<div class="displaymath">
+\begin{equation*}
+\overline{\forall x \in X, P_x} = \overline{\bigwedge_{x \in X} P_x} = \bigvee_{x \in X} \overline{P_x} = (\exists x \in X, \overline{P_x}) \hspace{1em}
+\overline{\exists x \in X, P_x} = \overline{\bigvee_{x \in X} P_x} = \bigwedge_{x \in X} \overline{P_x} = (\forall x \in X, \overline{P_x})
+\end{equation*}
+</div>
+<span class="incontext"><a href="sec-logic-prop.html#p-293">in-context</a></span>
 </body>
 </html>

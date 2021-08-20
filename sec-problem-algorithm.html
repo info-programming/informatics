@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2021-08-17T17:44:12+09:00    *-->
+<!--*    on 2021-08-20T09:35:57+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -221,15 +221,29 @@ var js_version = 0.11;
 </h6>問題の解を<em class="emphasis">手順</em>にして書き表したものを<dfn class="terminology">アルゴリズム</dfn>(<dfn class="terminology">algorithm</dfn>)という<a data-knowl="./knowl/bib-iso-2382-1993.html" title="Bibliographic Entry 22: ISO/IEC 2382-1:1993(en): Information technology — Vocabulary — Part 1: Fundamental terms">[22]</a><a data-knowl="./knowl/bib-iso-2382-2015.html" title="Bibliographic Entry 23: ISO/IEC 2382:2015(en): Information technology — Vocabulary">[23]</a><a data-knowl="./knowl/bib-jisx0001.html" title="Bibliographic Entry 35: JIS X0001: 情報処理用語――基本用語">[35]</a>。</article><p id="p-139">問題解決にあたっては、アルゴリズムの手順をプログラムとして書き表した上で実行することも多い。 ただし、プログラムはアルゴリズムを書き表したものや、コンピュータで動かすものとは限らない。 「式典のプログラム」のように、機械ではなく人間が実施するものも「プログラム」と呼ばれることがある。</p>
 <article class="definition-like" id="definition-14"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">6.8</span>. <span class="title">プログラム.</span>
-</h6>実行するべき<em class="emphasis">命令の列</em>を<dfn class="terminology">プログラム</dfn>(<dfn class="terminology">program</dfn>)という。</article><p id="p-140">アルゴリズムで解く基本的な問題には、列を特定の順番に並び替える<dfn class="terminology">整列</dfn>(<dfn class="terminology">sorting</dfn>)や、特定の空間の中で最適な解を探す<dfn class="terminology">探索</dfn>(<dfn class="terminology">search</dfn>)がある。</p>
+</h6>実行するべき<em class="emphasis">命令の列</em>を<dfn class="terminology">プログラム</dfn>(<dfn class="terminology">program</dfn>)という。</article><p id="p-140">アルゴリズムを人間が理解するために表現する方法には、<dfn class="terminology">フローチャート</dfn>(<dfn class="terminology">flowchart</dfn>)<a data-knowl="./knowl/bib-jisx0121.html" title="Bibliographic Entry 36: JIS X0121: 情報処理用流れ図・プログラム網図・システム資源図記号">[36]</a>やUMLの<dfn class="terminology">アクティビティ図</dfn>(<dfn class="terminology">activity diagram</dfn>)、プログラミング言語風に表す<dfn class="terminology">疑似コード</dfn>(<dfn class="terminology">pseudo-code</dfn>)などがある。</p>
 <article class="remark-like" id="note-6"><h6 class="heading">
-<span class="type">注釈</span> <span class="codenumber">6.9</span>. <span class="title">探索.</span>
+<span class="type">注釈</span> <span class="codenumber">6.9</span>. <span class="title">構造化定理.</span>
 </h6>
-<p id="p-141">ある問題の解を求める最も単純な方法は、考えうるすべての組み合わせを総当たりで試す<dfn class="terminology">全数探索</dfn>である。 特に、暗号の解読や認証の通過を目的に行う全数探索は、<dfn class="terminology">総当たり攻撃</dfn>(<dfn class="terminology">brute-force attack</dfn>)と呼ばれる。 全数探索は単純で古典的だが、解の範囲がある程度限定される場合には、人手でも行える他、コンピュータを使って機械的にも行えるため、十分有効な方法である。</p>
-<p id="p-142">全数探索のうち、一つの場合に注目してより<em class="emphasis">深く</em>探索する<dfn class="terminology">深さ優先</dfn>探索は、注目した部分に解が含まれる場合は高速に解を発見できるが、注目した部分に解が含まれない場合は探索に長時間を要する。 深さ優先探索は特定の場合を深めることから、垂直思考と類似している。</p>
-<p id="p-143">また、複数の場合を順に調べてより<em class="emphasis">広く</em>探索する<dfn class="terminology">幅優先</dfn>探索は、解が比較的浅い部分にある場合は高速に解を発見できるが、解が深い部分にある場合は探索に長時間を要する。 幅優先探索は多数の場合を検討することから、水平思考と類似している。</p>
-<p id="p-144">実用上は、深さ優先と幅優先を組み合わせた方法や、評価関数に基づいて次に探索すべき部分を決定する方法などが使われる。 また、すべての場合を検討するのではなく、<em class="emphasis">確率的に場合を選択</em>し、選択した場合のみを検討する<dfn class="terminology">Monte Carlo法</dfn>などもよく使われる。 <figure class="figure-like" id="fig-search"><div style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="image/search.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">図</span> <span class="codenumber">6.10.</span> 探索と水平思考・垂直思考</figcaption></figure></p></article></section></div></main>
+<p id="p-141">Böhm(ベーム)とJacopini(ヤコピニ)は、アルゴリズムをプログラムで実現する上で、どのような制御構造が必要かを示した<a data-knowl="./knowl/bib-boehm.html" title="Bibliographic Entry 38: Flow Diagrams, Turing Machines And Languages With Only Two Formation Rules">[38]</a>。 彼らの定理は、<dfn class="terminology">構造化定理</dfn>として知られている。 構造化定理によれば、アルゴリズムの実装には、逐次・選択・反復の3種類の制御構造があればよい。図<a data-knowl="./knowl/fig-flow.html" title="図 6.10">6.10</a>に、フローチャートによる逐次・選択・反復の表現を示す。</p>
+<ul class="disc">
+<li id="li-45">
+<dfn class="terminology">逐次</dfn>(<dfn class="terminology">sequence</dfn>)(<dfn class="terminology">順次</dfn>)は、<em class="emphasis">命令を1つずつ順番に実行</em>する制御構造である。 逐次実行では同時に複数の命令を実行できないため、並列実行は行えない。</li>
+<li id="li-46">
+<dfn class="terminology">選択</dfn>(<dfn class="terminology">selection</dfn>)(<dfn class="terminology">条件分岐</dfn>)は、指定された<em class="emphasis">条件(命題)の真偽によって、次に実行する命令を変える</em>制御構造である。 多くのプログラミング言語では、<em class="emphasis">if文</em>として実装されている。</li>
+<li id="li-47">
+<dfn class="terminology">反復</dfn>(<dfn class="terminology">iteration</dfn>)(<dfn class="terminology">繰り返し</dfn>)は、指定された<em class="emphasis">条件(命題)が真である限り、いくつかの命令を実行し続ける</em>制御構造である。 多くのプログラミング言語では、<em class="emphasis">while文</em>として実装されている。</li>
+</ul>
+<figure class="figure-like" id="fig-flow"><div style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="image/flow.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">図</span> <span class="codenumber">6.10.</span> フローチャートによる逐次・選択・反復の表現</figcaption></figure></article><p id="p-142">アルゴリズムで解く基本的な問題には、列を特定の順番に並び替える<dfn class="terminology">整列</dfn>(<dfn class="terminology">sorting</dfn>)や、特定の空間の中で最適な解を探す<dfn class="terminology">探索</dfn>(<dfn class="terminology">search</dfn>)がある。</p>
+<article class="remark-like" id="note-7"><h6 class="heading">
+<span class="type">注釈</span> <span class="codenumber">6.11</span>. <span class="title">探索.</span>
+</h6>
+<p id="p-143">ある問題の解を求める最も単純な方法は、考えうるすべての組み合わせを総当たりで試す<dfn class="terminology">全数探索</dfn>である。 特に、暗号の解読や認証の通過を目的に行う全数探索は、<dfn class="terminology">総当たり攻撃</dfn>(<dfn class="terminology">brute-force attack</dfn>)と呼ばれる。 全数探索は単純で古典的だが、解の範囲がある程度限定される場合には、人手でも行える他、コンピュータを使って機械的にも行えるため、十分有効な方法である。</p>
+<p id="p-144">全数探索のうち、一つの場合に注目してより<em class="emphasis">深く</em>探索する<dfn class="terminology">深さ優先</dfn>探索は、注目した部分に解が含まれる場合は高速に解を発見できるが、注目した部分に解が含まれない場合は探索に長時間を要する。 深さ優先探索は特定の場合を深めることから、垂直思考と類似している。</p>
+<p id="p-145">また、複数の場合を順に調べてより<em class="emphasis">広く</em>探索する<dfn class="terminology">幅優先</dfn>探索は、解が比較的浅い部分にある場合は高速に解を発見できるが、解が深い部分にある場合は探索に長時間を要する。 幅優先探索は多数の場合を検討することから、水平思考と類似している。</p>
+<p id="p-146">実用上は、深さ優先と幅優先を組み合わせた方法や、評価関数に基づいて次に探索すべき部分を決定する方法などが使われる。 また、すべての場合を検討するのではなく、<em class="emphasis">確率的に場合を選択</em>し、選択した場合のみを検討する<dfn class="terminology">Monte Carlo法</dfn>などもよく使われる。 <figure class="figure-like" id="fig-search"><div style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="image/search.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">図</span> <span class="codenumber">6.12.</span> 探索と水平思考・垂直思考</figcaption></figure></p></article></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
 <script src="https://pretextbook.org/js/0.11/login.js"></script>

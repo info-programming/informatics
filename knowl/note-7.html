@@ -2,7 +2,7 @@
 <html lang="ja-JP">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2021-08-17T17:44:14+09:00    *-->
+<!--*    on 2021-08-20T09:35:59+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,12 @@
 </head>
 <body>
 <article class="remark-like"><h6 class="heading">
-<span class="type">注釈</span> <span class="codenumber">7.7</span>. <span class="title">「互いに素」を表す記法.</span>
-</h6>\(A_i\)と\(A_j\)が互いに素な集合であるとき、\(A_i\)と\(A_j\)の和集合\(A_i \cup A_j\)を、互いに素なことを強調して記号「\(\sqcup\)」を使い、\(A_i \sqcup A_j\)と表すことがある。 同様に、\(A = A_1 \cup \cdots \cup A_n (= \bigcup_{i=1}^n A_i)\)となる分割が直和のとき、\(A = A_1 \sqcup \cdots \sqcup A_n (= \bigsqcup_{i=1}^n A_i)\)と表すことがある。</article><span class="incontext"><a href="sec-reduction-cond.html#note-7">in-context</a></span>
+<span class="type">注釈</span> <span class="codenumber">6.11</span>. <span class="title">探索.</span>
+</h6>
+<p>ある問題の解を求める最も単純な方法は、考えうるすべての組み合わせを総当たりで試す<dfn class="terminology">全数探索</dfn>である。 特に、暗号の解読や認証の通過を目的に行う全数探索は、<dfn class="terminology">総当たり攻撃</dfn>(<dfn class="terminology">brute-force attack</dfn>)と呼ばれる。 全数探索は単純で古典的だが、解の範囲がある程度限定される場合には、人手でも行える他、コンピュータを使って機械的にも行えるため、十分有効な方法である。</p>
+<p>全数探索のうち、一つの場合に注目してより<em class="emphasis">深く</em>探索する<dfn class="terminology">深さ優先</dfn>探索は、注目した部分に解が含まれる場合は高速に解を発見できるが、注目した部分に解が含まれない場合は探索に長時間を要する。 深さ優先探索は特定の場合を深めることから、垂直思考と類似している。</p>
+<p>また、複数の場合を順に調べてより<em class="emphasis">広く</em>探索する<dfn class="terminology">幅優先</dfn>探索は、解が比較的浅い部分にある場合は高速に解を発見できるが、解が深い部分にある場合は探索に長時間を要する。 幅優先探索は多数の場合を検討することから、水平思考と類似している。</p>
+<p>実用上は、深さ優先と幅優先を組み合わせた方法や、評価関数に基づいて次に探索すべき部分を決定する方法などが使われる。 また、すべての場合を検討するのではなく、<em class="emphasis">確率的に場合を選択</em>し、選択した場合のみを検討する<dfn class="terminology">Monte Carlo法</dfn>などもよく使われる。 <figure class="figure-like"><div style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="image/search.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">図</span> <span class="codenumber">6.12.</span> 探索と水平思考・垂直思考</figcaption></figure></p></article><span class="incontext"><a href="sec-problem-algorithm.html#note-7">in-context</a></span>
 </body>
 </html>

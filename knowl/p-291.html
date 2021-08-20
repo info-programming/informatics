@@ -2,7 +2,7 @@
 <html lang="ja-JP">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2021-08-17T17:44:15+09:00    *-->
+<!--*    on 2021-08-20T09:35:59+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,12 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p><dfn class="terminology">演繹</dfn>(えんえき)(<dfn class="terminology">deduction</dfn>)は、前提と規則から結論を導く推論である。 図<a data-knowl="./knowl/fig-logic-inference.html" title="図 11.3">11.3</a>の例では、「ソクラテスは人である」という前提と、「人は死ぬ」という規則が与えられたときに、「ソクラテスは死ぬ」という<em class="emphasis">結論が真だと推論</em>する。 Aristotleによる三段論法<a data-knowl="./knowl/bib-aristotle-ana.html" title="Bibliographic Entry 96: Prior Analytics">[96]</a><a data-knowl="./knowl/bib-aristotle-ana-j.html" title="Bibliographic Entry 98: 分析論前書">[98]</a>は演繹の代表的な推論法で、「\(A ⇒ B, B ⇒ C\)」のとき「\(A ⇒ C\)」が成り立つという推論を行う。</p>
-<span class="incontext"><a href="sec-logic-infer.html#p-291">in-context</a></span>
+<p>この定義に従えば、「命題「\(P ⇒ Q\)」とその対偶「\(\bar{Q} ⇒ \bar{P}\)」の真偽は等しい」という定理は、次の式変形で示せる。</p>
+<div class="displaymath">
+\begin{equation*}
+(\bar{Q} ⇒ \bar{P}) = (\bar{\bar{Q}} \vee \bar{P}) = (Q \vee \bar{P}) = (\bar{P} \vee Q) = (P ⇒ Q)
+\end{equation*}
+</div>
+<span class="incontext"><a href="sec-logic-prop.html#p-291">in-context</a></span>
 </body>
 </html>
