@@ -1,64 +1,57 @@
 <!DOCTYPE html>
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2021-08-20T09:35:57+09:00    *-->
-<!--*                                    *-->
-<!--*      https://pretextbook.org       *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-08-21T09:05:04+09:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <html lang="ja-JP">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>還元の条件</title>
 <meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [['\\(','\\)']]
-    },
-    asciimath2jax: {
-        ignoreClass: ".*",
-        processClass: "has_am"
-    },
-    jax: ["input/AsciiMath"],
-    extensions: ["asciimath2jax.js"],
-    TeX: {
-        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
-        // scrolling to fragment identifiers is controlled by other Javascript
-        positionToHash: false,
-        equationNumbers: { autoNumber: "none", useLabelIds: true, },
-        TagSide: "right",
-        TagIndent: ".8em",
-    },
-    // HTML-CSS output Jax to be dropped for MathJax 3.0
-    "HTML-CSS": {
-        scale: 88,
-        mtextFontInherit: true,
-    },
-    CommonHTML: {
-        scale: 88,
-        mtextFontInherit: true,
-    },
-});
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="image/style.css">
-<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
-<script>var logged_in = false;
-var role = 'student';
-var guest_access = true;
-var login_required = false;
-var js_version = 0.11;
-</script>
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\require{newunicodechar}\unimathsetup{math-style=ISO,bold-style=ISO}
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\require{newunicodechar}\unimathsetup{math-style=ISO,bold-style=ISO}
 \setmathfont{XITSMath-Regular.otf}
 \usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
 \setmonofont{Noto Sans Mono CJK JP}
@@ -98,17 +91,17 @@ var js_version = 0.11;
 <p class="byline"></p>
 </div>
 </div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-reduction-def.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-reduction.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-reduction-eg.html" title="Next">Next</a></span>
+<a class="index-button toolbar-item button" href="index-1.html" title="索引">索引</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-reduction-def.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-reduction.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-reduction-eg.html" title="Next">Next</a></span>
 </div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
 <button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-reduction-def.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-reduction.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-reduction-eg.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
 <nav id="toc"><ul>
 <li class="link">
 <a href="ch-intro.html" data-scroll="ch-intro"><span class="codenumber">1</span> <span class="title">情報社会と情報学</span></a><ul>
@@ -207,45 +200,43 @@ var js_version = 0.11;
 <li><a href="sec-logic-science.html" data-scroll="sec-logic-science">科学における推論</a></li>
 </ul>
 </li>
-<li class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
 <li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">参考文献</span></a></li>
-<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">索引</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Index</span></a></li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-reduction-cond"><h2 class="heading hide-type">
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-reduction-cond"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">7.3</span> <span class="title">還元の条件</span>
 </h2>
-<a href="sec-reduction-cond.html" class="permalink">¶</a><section class="introduction" id="introduction-11"><p id="p-154">還元主義に基づく分析では、複雑な対象をより細かい対象に分割し、元の対象よりも単純な分割後の対象を分析することで、元の対象を理解できる。 一方で、適切な分割を行わなければ、検討すべき対象を見落としたり、重要な部分を見過ごしたりする可能性がある。 そのため、還元による分析の際は、分割が適切かどうかを検討する必要がある。</p></section><section class="subsection" id="ssec-reduction-em"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-11"><p id="p-154">還元主義に基づく分析では、複雑な対象をより細かい対象に分割し、元の対象よりも単純な分割後の対象を分析することで、元の対象を理解できる。 一方で、適切な分割を行わなければ、検討すべき対象を見落としたり、重要な部分を見過ごしたりする可能性がある。 そのため、還元による分析の際は、分割が適切かどうかを検討する必要がある。</p></section><section class="subsection" id="ssec-reduction-em"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.3.1</span> <span class="title">還元性</span>
 </h3>
-<a href="sec-reduction-cond.html#ssec-reduction-em" class="permalink">¶</a><p id="p-155">ある集合\(A\)を、部分集合\(A_1, \cdots, A_n (\subset A)\)に分割できるとする。 ある性質について還元主義で分析するためには、まずその性質について、集合\(A\)に還元性があることが必要である。</p>
-<article class="definition-like" id="definition-16"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">7.2</span>. <span class="title">還元性.</span>
+<p id="p-155">ある集合\(A\)を、部分集合\(A_1, \cdots, A_n (\subset A)\)に分割できるとする。 ある性質について還元主義で分析するためには、まずその性質について、集合\(A\)に還元性があることが必要である。</p>
+<article class="definition definition-like" id="definition-16"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2</span><span class="period">.</span><span class="space"> </span><span class="title">還元性.</span>
 </h6>集合\(A\)に対して、部分集合\(A_1, \cdots, A_n (\subset A)\)があるとする。 \(A\)や\(A_i\)がもつある性質を数値化する関数を\(m\)とおくとき、 <ul class="disc">
-<li id="li-48">\(m(A) =    m(A_1) + \cdots + m(A_n)\)となるなら、\(A\)はその性質について<dfn class="terminology">還元性</dfn>があるという。</li>
-<li id="li-49">\(m(A) \neq m(A_1) + \cdots + m(A_n)\)となるなら、\(A\)はその性質について<dfn class="terminology">創発性</dfn>があるという。</li>
+<li id="li-48"><p id="p-derived-li-48">\(m(A) =    m(A_1) + \cdots + m(A_n)\)となるなら、\(A\)はその性質について<dfn class="terminology">還元性</dfn>があるという。</p></li>
+<li id="li-49"><p id="p-derived-li-49">\(m(A) \neq m(A_1) + \cdots + m(A_n)\)となるなら、\(A\)はその性質について<dfn class="terminology">創発性</dfn>があるという。</p></li>
 </ul></article></section><section class="subsection" id="ssec-reduction-mece"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.3.2</span> <span class="title">MECE</span>
 </h3>
-<a href="sec-reduction-cond.html#ssec-reduction-mece" class="permalink">¶</a><p id="p-156">ある性質について還元性のある集合\(A\)は、その性質について集合を分割することができる。 このとき、\(A = A_1 \cup \cdots \cup A_n\)と分割できるが、この分割が適切な分割だとは限らない。 図<a data-knowl="./knowl/fig-system-2d-set-ce.html" title="図 7.3">7.3</a>、図<a data-knowl="./knowl/fig-system-2d-set-me.html" title="図 7.4">7.4</a>、図<a data-knowl="./knowl/fig-system-2d-set-mece.html" title="図 7.5">7.5</a>に、分割で起こりうる可能性を示す。</p>
-<p id="p-157">\(A\)の要素のうち、\(A_1, \cdots, A_n\)に<em class="emphasis">含まれない要素があり、図<a data-knowl="./knowl/fig-system-2d-set-ce.html" title="図 7.3">7.3</a>のように「漏れ」が生じる</em>ことがありうる。 分割に「漏れ」があると、必要な要素を見落として分析することになり、正しい解に到達しない。</p>
-<p id="p-158">また、\(A_1, \cdots, A_n\)に<em class="emphasis">同じ要素を含む集合があり、図<a data-knowl="./knowl/fig-system-2d-set-me.html" title="図 7.4">7.4</a>のように「重複」が生じる</em>ことがありうる。 分割に「重複」があると、必要な要素を複数回分析することになり、効率の良い分析ができない。</p>
-<p id="p-159">以上のような誤りを避けると、図<a data-knowl="./knowl/fig-system-2d-set-mece.html" title="図 7.5">7.5</a>のように\(A\)を<em class="alert">漏れなく(Collectively Exhaustive)重複なく(Mutually Exclusive)分割</em>する\(A_1, \cdots, A_n\)をとることができる。</p>
+<p id="p-156">ある性質について還元性のある集合\(A\)は、その性質について集合を分割することができる。 このとき、\(A = A_1 \cup \cdots \cup A_n\)と分割できるが、この分割が適切な分割だとは限らない。 図<a class="xref" data-knowl="./knowl/fig-system-2d-set-ce.html" title="図 7.3">7.3</a>、図<a class="xref" data-knowl="./knowl/fig-system-2d-set-me.html" title="図 7.4">7.4</a>、図<a class="xref" data-knowl="./knowl/fig-system-2d-set-mece.html" title="図 7.5">7.5</a>に、分割で起こりうる可能性を示す。</p>
+<p id="p-157">\(A\)の要素のうち、\(A_1, \cdots, A_n\)に<em class="emphasis">含まれない要素があり、図<a class="xref" data-knowl="./knowl/fig-system-2d-set-ce.html" title="図 7.3">7.3</a>のように「漏れ」が生じる</em>ことがありうる。 分割に「漏れ」があると、必要な要素を見落として分析することになり、正しい解に到達しない。</p>
+<p id="p-158">また、\(A_1, \cdots, A_n\)に<em class="emphasis">同じ要素を含む集合があり、図<a class="xref" data-knowl="./knowl/fig-system-2d-set-me.html" title="図 7.4">7.4</a>のように「重複」が生じる</em>ことがありうる。 分割に「重複」があると、必要な要素を複数回分析することになり、効率の良い分析ができない。</p>
+<p id="p-159">以上のような誤りを避けると、図<a class="xref" data-knowl="./knowl/fig-system-2d-set-mece.html" title="図 7.5">7.5</a>のように\(A\)を<em class="alert">漏れなく(Collectively Exhaustive)重複なく(Mutually Exclusive)分割</em>する\(A_1, \cdots, A_n\)をとることができる。</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:4.166666666666667%;margin-right:4.166666666666667%;">
-<div class="sbspanel" style="width:27.2727272727273%;justify-content:flex-start;"><figure class="figure-like" id="fig-system-2d-set-ce"><img src="image/system-2d-set-ce.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">図</span> <span class="codenumber">7.3.</span> 漏れがある場合</figcaption></figure></div>
-<div class="sbspanel" style="width:27.2727272727273%;justify-content:flex-start;"><figure class="figure-like" id="fig-system-2d-set-me"><img src="image/system-2d-set-me.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">図</span> <span class="codenumber">7.4.</span> 重複がある場合</figcaption></figure></div>
-<div class="sbspanel" style="width:27.2727272727273%;justify-content:flex-start;"><figure class="figure-like" id="fig-system-2d-set-mece"><img src="image/system-2d-set.svg" style="width: 100%; height: auto;" alt=""><figcaption><span class="type">図</span> <span class="codenumber">7.5.</span> 適切な分割(MECE)</figcaption></figure></div>
+<div class="sbspanel top" style="width:27.2727272727273%;"><figure class="figure figure-like" id="fig-system-2d-set-ce"><img src="image/system-2d-set-ce.svg" role="img" class="contained" alt=""><figcaption><span class="type">図</span><span class="space"> </span><span class="codenumber">7.3<span class="period">.</span></span><span class="space"> </span>漏れがある場合</figcaption></figure></div>
+<div class="sbspanel top" style="width:27.2727272727273%;"><figure class="figure figure-like" id="fig-system-2d-set-me"><img src="image/system-2d-set-me.svg" role="img" class="contained" alt=""><figcaption><span class="type">図</span><span class="space"> </span><span class="codenumber">7.4<span class="period">.</span></span><span class="space"> </span>重複がある場合</figcaption></figure></div>
+<div class="sbspanel top" style="width:27.2727272727273%;"><figure class="figure figure-like" id="fig-system-2d-set-mece"><img src="image/system-2d-set.svg" role="img" class="contained" alt=""><figcaption><span class="type">図</span><span class="space"> </span><span class="codenumber">7.5<span class="period">.</span></span><span class="space"> </span>適切な分割(MECE)</figcaption></figure></div>
 </div></div>
-<article class="definition-like" id="definition-17"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">7.6</span>. <span class="title">Mutually Exclusive and Collectively Exhaustive (MECE).</span>
+<article class="definition definition-like" id="definition-17"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.6</span><span class="period">.</span><span class="space"> </span><span class="title">Mutually Exclusive and Collectively Exhaustive (MECE).</span>
 </h6>集合\(A\)に対して、部分集合\(A_1, \cdots, A_n (\subset A)\)があるとする。 このとき、次の2つの条件を満たすならば、\(A_1, \cdots, A_n\)は\(A\)の<dfn class="terminology">MECE</dfn>(<dfn class="terminology">Mutually Exclusive and Collectively Exhaustive</dfn>)な分割、または<dfn class="terminology">直和</dfn>(ちょくわ)であるという。 <ul class="disc">
-<li id="li-50">任意の\(i, j (i \neq j)\)について、\(A_i \cap A_j = \emptyset\)が成り立つ(<em class="emphasis">Mutually Exclusive</em>) (このとき、\(A_1, \cdots, A_n\)は<dfn class="terminology">互いに素</dfn>な集合であるという)</li>
-<li id="li-51">任意の\(a \in A\)について、\(a \in A_i\)となるような\(i (= 1, \cdots, n)\)が存在する(<em class="emphasis">Collectively Exhaustive</em>)</li>
-</ul></article><article class="remark-like" id="note-8"><h6 class="heading">
-<span class="type">注釈</span> <span class="codenumber">7.7</span>. <span class="title">「互いに素」を表す記法.</span>
+<li id="li-50"><p id="p-derived-li-50">任意の\(i, j (i \neq j)\)について、\(A_i \cap A_j = \emptyset\)が成り立つ(<em class="emphasis">Mutually Exclusive</em>) (このとき、\(A_1, \cdots, A_n\)は<dfn class="terminology">互いに素</dfn>な集合であるという)</p></li>
+<li id="li-51"><p id="p-derived-li-51">任意の\(a \in A\)について、\(a \in A_i\)となるような\(i (= 1, \cdots, n)\)が存在する(<em class="emphasis">Collectively Exhaustive</em>)</p></li>
+</ul></article><article class="note remark-like" id="note-8"><h6 class="heading">
+<span class="type">注釈</span><span class="space"> </span><span class="codenumber">7.7</span><span class="period">.</span><span class="space"> </span><span class="title">「互いに素」を表す記法.</span>
 </h6>\(A_i\)と\(A_j\)が互いに素な集合であるとき、\(A_i\)と\(A_j\)の和集合\(A_i \cup A_j\)を、互いに素なことを強調して記号「\(\sqcup\)」を使い、\(A_i \sqcup A_j\)と表すことがある。 同様に、\(A = A_1 \cup \cdots \cup A_n (= \bigcup_{i=1}^n A_i)\)となる分割が直和のとき、\(A = A_1 \sqcup \cdots \sqcup A_n (= \bigsqcup_{i=1}^n A_i)\)と表すことがある。</article></section></section></div></main>
 </div>
-<div class="login-link"><span id="loginlogout" class="login">login</span></div>
-<script src="https://pretextbook.org/js/0.11/login.js"></script>
 </body>
 </html>
