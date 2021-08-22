@@ -12,17 +12,21 @@
 </head>
 <body>
 <article class="note remark-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
-<span class="type">注釈</span><span class="space"> </span><span class="codenumber">11.5</span><span class="period">.</span><span class="space"> </span><span class="title">証明の形式的定義.</span>
+<span class="type">注釈</span><span class="space"> </span><span class="codenumber">11.2</span><span class="period">.</span><span class="space"> </span><span class="title">「すべて」「ある」の形式的定義とその否定.</span>
 </h6>
-<p>命題の列\(P_1, \cdots, P_n\)について、任意の\(i (1 \leq i \leq n)\)について「\(P_i\)は公理である」または「\(P_1, \cdots, P_{i-1} ⇒ P_i\)が真である」を満たすとき、\(P_1, \cdots, P_n\)を\(P_n\)の<dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">証明</dfn>(<dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">proof</dfn>)と呼び、\(P_n\)を<dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">定理</dfn>(<dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">theorem</dfn>)と呼ぶ。</p>
-<p>例えば、命題「2つの偶数の和は偶数」の証明をこの定義に従って行うと、次のようになる。</p>
-<ul class="disc">
-<li><p>\(P_1\text{:}\)「2つの偶数\(x, y\)は2つの整数\(p, q\)を使って\(x = 2p, y = 2q\)と表せる」</p></li>
-<li><p>\(P_2\text{:}\)「\(x + y = 2p + 2q\)」</p></li>
-<li><p>\(P_3\text{:}\)「\(2p + 2q = 2(p + q)\)」</p></li>
-<li><p>\(P_4\text{:}\)「\(2(p + q)\)は偶数」</p></li>
-<li><p>\(P_5\text{:}\)「2つの偶数の和は偶数」</p></li>
-</ul>
-<p>このとき、命題の列\(P_1, \cdots, P_5\)について、\(P_1\)は偶数の定義により真、\(P_2\)は\(P_1\)により真、\(P_3\)は加法・乗法の定義と分配法則により真、\(P_4\)は偶数の定義により真、\(P_5\)は\(P_1, \cdots, P_4\)により真となり、元の命題は真である。</p></article><span class="incontext"><a href="sec-logic-infer.html#note-22">in-context</a></span>
+<p>「すべて」や「ある」を含む命題については、Aristotleの時代から議論されてきた<a class="xref" data-knowl="./knowl/bib-aristotle-int.html" title="Bibliographic Entry 100: On Interpretation">[100]</a><a class="xref" data-knowl="./knowl/bib-aristotle-int-j.html" title="Bibliographic Entry 101: 命題論">[101]</a>。 集合\(X\)の<em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">すべての</em>(<em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">任意の</em>)要素\(x\)について命題\(P_x\)が成り立つことを、全称記号と呼ばれる記号「\(\forall\)」を使って「\(\forall x \in X, P_x\)」と表す。 また、集合\(X\)の<em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">ある</em>要素\(x\)について命題\(P_x\)が成り立つ(\(P_x\)が成り立つ\(x\)が<em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">存在する</em>)ことを、特称記号と呼ばれる記号「\(\exists\)」を使って「\(\exists x \in X, P_x\)」と表す。 \(\forall, \exists\)はそれぞれ、「<em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">A</em>ll」と「<em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">E</em>xists」の頭文字を逆さにした記号である。 これらを、前のコラムで使った「\(:=\)」で形式的に定義すると、次のようになる。 なお、\(X = \{x_1, \cdots, x_n\}\)のとき\(\bigwedge_{x \in X} P_x := P_{x_1} \wedge \cdots \wedge P_{x_n}\)とする。</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+(\forall x \in X, P_x) := \bigwedge_{x \in X} P_x, \hspace{1em}
+(\exists x \in X, P_x) := \bigvee_{x \in X} P_x
+\end{equation*}
+</div>
+<p>この定義を使うと、「すべての\(x\)について\(P_x\)が成り立つ」の否定が「ある\(x\)について\(P_x\)が成り立たない」になることや、「ある\(x\)について\(P_x\)が成り立つ」の否定が「すべての\(x\)について\(P_x\)が成り立たない」になることは、次の式変形で示せる。変形の途中ではde Morganの公式(\(\overline{A \wedge B} = \bar{A} \vee \bar{B}, \overline{A \vee B} = \bar{A} \wedge \bar{B}\))を使っている。</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\overline{\forall x \in X, P_x} = \overline{\bigwedge_{x \in X} P_x} = \bigvee_{x \in X} \overline{P_x} = (\exists x \in X, \overline{P_x}) \hspace{1em}
+\overline{\exists x \in X, P_x} = \overline{\bigvee_{x \in X} P_x} = \bigwedge_{x \in X} \overline{P_x} = (\forall x \in X, \overline{P_x})
+\end{equation*}
+</div></article><span class="incontext"><a href="sec-logic-prop.html#note-22">in-context</a></span>
 </body>
 </html>
