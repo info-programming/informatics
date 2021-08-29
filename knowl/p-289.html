@@ -12,7 +12,12 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>日常会話では、命題「\(x\)がネコならば、\(x\)は動物である」をより単純に「ネコは動物である」と表すことがある。 「ネコは動物である」も真偽が定まるので命題だが、「ネコ」「動物」は単なる集合で真偽が定まらないため、この命題を「\(\text{ネコ} ⇒ \text{動物}\)」と表すことはできない。 代わりに、部分集合を表す記号「\(\subset\)」を使うと、この命題は「\(\text{ネコ} \subset \text{動物}\)」と表せる。</p>
+<p>この定義に従えば、「命題「\(P ⇒ Q\)」とその対偶「\(\bar{Q} ⇒ \bar{P}\)」の真偽は等しい」という定理は、次の式変形で示せる。</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+(\bar{Q} ⇒ \bar{P}) = (\bar{\bar{Q}} \vee \bar{P}) = (Q \vee \bar{P}) = (\bar{P} \vee Q) = (P ⇒ Q)
+\end{equation*}
+</div>
 <span class="incontext"><a href="sec-logic-prop.html#p-289">in-context</a></span>
 </body>
 </html>

@@ -12,10 +12,11 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>この定義に従えば、「命題「\(P ⇒ Q\)」とその対偶「\(\bar{Q} ⇒ \bar{P}\)」の真偽は等しい」という定理は、次の式変形で示せる。</p>
+<p>この定義を使うと、「すべての\(x\)について\(P_x\)が成り立つ」の否定が「ある\(x\)について\(P_x\)が成り立たない」になることや、「ある\(x\)について\(P_x\)が成り立つ」の否定が「すべての\(x\)について\(P_x\)が成り立たない」になることは、次の式変形で示せる。変形の途中ではde Morganの公式(\(\overline{A \wedge B} = \bar{A} \vee \bar{B}, \overline{A \vee B} = \bar{A} \wedge \bar{B}\))を使っている。</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-(\bar{Q} ⇒ \bar{P}) = (\bar{\bar{Q}} \vee \bar{P}) = (Q \vee \bar{P}) = (\bar{P} \vee Q) = (P ⇒ Q)
+\overline{\forall x \in X, P_x} = \overline{\bigwedge_{x \in X} P_x} = \bigvee_{x \in X} \overline{P_x} = (\exists x \in X, \overline{P_x}) \hspace{1em}
+\overline{\exists x \in X, P_x} = \overline{\bigvee_{x \in X} P_x} = \bigwedge_{x \in X} \overline{P_x} = (\forall x \in X, \overline{P_x})
 \end{equation*}
 </div>
 <span class="incontext"><a href="sec-logic-prop.html#p-291">in-context</a></span>

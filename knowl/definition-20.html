@@ -12,7 +12,21 @@
 </head>
 <body>
 <article class="definition definition-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
-<span class="type">定義</span><span class="space"> </span><span class="codenumber">8.3</span><span class="period">.</span><span class="space"> </span><span class="title">システム.</span>
-</h6>要素の集合を\(V = \{ v_i | i = 1, \cdots, n \}\)、\(V\)の構造を\(E = \{ e_{ij} | i = 1, \cdots, n; j = 1, \cdots, n; \}\)としたとき、組\((V, E)\)を<dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">システム</dfn>(<dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">system</dfn>)または<dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">系</dfn>(けい)という。 このとき、\(V\)の要素をシステム\((V, E)\)の要素といい、集合\(E\)をシステム\((V, E)\)の構造という。</article><span class="incontext"><a href="sec-sys-def.html#definition-20">in-context</a></span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">8.2</span><span class="period">.</span><span class="space"> </span><span class="title">隣接行列.</span>
+</h6>集合\(V = \{ v_i | i = 1, \cdots, n \}\)の2つの要素\(v_i, v_j\)間に関係がある、つまり\((v_i, v_j) \in E\)のとき\(e_{ij} = 1\)とし、それ以外のとき\(e_{ij} = 0\)とする。 このとき、\(e_{ij}\)を次のように並べた行列\(\varepsilon = (e_{ij})\)を、集合\(V\)の<dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">隣接行列</dfn>という。<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\varepsilon = (e_{ij})
+= \begin{pmatrix}
+e_{11} \amp e_{12} \amp \cdots \amp e_{1n} \\
+e_{21} \amp e_{22} \amp \cdots \amp e_{2n} \\
+\vdots           \amp \vdots           \amp \ddots \amp \vdots \\
+e_{n1} \amp e_{n2} \amp \cdots \amp e_{nn} \\
+\end{pmatrix} \ 
+\left( e_{ij} = \begin{cases}
+1 \amp ((v_i, v_j) \in E) \\
+0 \amp ((v_i, v_j) \notin E) \\
+\end{cases} \right)
+\end{equation*}
+</div>より一般的に、\(e_{ij}\)の値を非負の実数とすることもある。このとき、\(e_{ij}\)は関係\((v_i, v_j)\)の大きさや強さ、広さなどを表すことができるので、\((v_i, v_j)\)の<dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">容量</dfn>(<dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">capacity</dfn>)という。</article><span class="incontext"><a href="sec-sys-bg.html#definition-20">in-context</a></span>
 </body>
 </html>
